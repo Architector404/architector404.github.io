@@ -1,0 +1,67 @@
+/* Общие */
+.owl-next, .owl-prev
+{
+    font-weight: bold !important;
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+.owl-next > span, .owl-prev > span
+{
+    font-size: 48px;
+    color: white;
+}
+.owl-theme .owl-nav
+{
+    margin-top: 0;
+}
+.owl-theme .owl-nav [class*='owl-']:hover
+{
+    background: none;
+}
+
+.stick
+{
+    width: 0;
+    height: 24px;
+    position: absolute;
+    top: 1%;
+    right: 37px;
+    opacity: 0.21;
+    border: 1px solid #000000;
+}
+.owl-simple .owl-prev, .owl-simple .owl-next
+{
+    position: absolute;
+    top: -10%;
+}
+.owl-prev {
+    right: 4%;
+}
+.owl-next {
+    right: 0;
+}
+@media screen and (max-width: 767px) {
+    .offers-slider .offers-item__arrow{
+        display: none;
+    }
+    .offers-slider .offers-item
+    {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    .owl-simple .owl-prev, .owl-simple .owl-next
+    {
+        top: 42%;
+    }
+    .owl-prev {
+        left: 0;
+    }
+    .owl-next {
+        right: 0;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .stick {
+        display: none;
+    }
+}
