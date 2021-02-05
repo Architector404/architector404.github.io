@@ -1,0 +1,129 @@
+@font-face {
+    font-family: "Avenir";
+    src: url("../fonts/AvenirLTStd-Book.otf");
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+html
+{
+
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Avenir";
+    color: #fff;
+    background: url("../img/Image.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.wrap
+{
+    width: 100%;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.blur
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: rgba(14, 26, 13, 0.74);
+    opacity: 1.0;
+}
+
+.logo
+{
+    width: 12.5%;
+    margin: 0 auto;
+    margin-top: 15.5%;
+}
+
+.title
+{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1%;
+}
+.title h1
+{
+    text-align: center;
+    font-size: 2.8vmax;
+}
+
+.languages
+{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 6%;
+}
+.languages p
+{
+    text-align: center;
+    font-size: 1.75vmax;
+}
+.languages a {
+    display: inline-block;
+    position: relative;
+    margin: 0 30px;
+    color:#fff;
+    font-size: 1.4vmax;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+.languages a:after {
+    background-color: #fff;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    left:50%;
+    position:absolute;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    transform:translateX(-50%);
+}
+.languages a:hover:after,
+.languages a:focus:after {
+    width: 100%;
+}
+
+.social
+{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 11.5%;
+    text-align: center;
+}
+.social a
+{
+    width: 1.9%;
+    display: inline-block;
+    padding: 0 15px;
+    text-decoration: none;
+}
+
+.img_fit
+{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
