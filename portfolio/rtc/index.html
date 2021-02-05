@@ -1,0 +1,696 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- <base href="/"> -->
+    <title>Разработка торговых роботов, советников MetaTrader 4</title>
+    <link rel="canonical" href="">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="">
+    <link rel="alternate" href="" hreflang="en">
+    <link rel="alternate" href="" hreflang="cn">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="icon" href="img/favicon.png">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon.png">
+    <!-- Template Basic Images End -->
+    <meta name="document-state" content="document">
+    <meta name="resource-type" content="document">
+    <meta name="robots" content="index,nofollow">
+    <meta name="copyright" content="RoboTradeCoders">
+    <meta name="description"
+          content="Индивидуальная разработка торговых роботов, советников, индикаторов, скриптов на заказ для MetaTrader 4 на заказ. Все делаем в оговоренные сроки.">
+    <meta name="keywords"
+          content="торговый, робот, автоматизация, автоматическая торговля, разработка, торговая система, MetaTrader, Quik, скрипт, индикатор, торговая платформа">
+    <!--Maps Meta tags-->
+    <meta property="business:contact_data:country_name" content="Россия">
+    <meta property="business:contact_data:email" content="maxim.buralkin@yandex.ru">
+    <meta property="business:contact_data:phone_number" content="+7 (902) 230-44-20">
+    <meta property="business:contact_data:website" content="">
+    <!--OG Meta tags-->
+    <meta name="og:country-name" content="Россия">
+    <meta name="og:email" content="maxim.buralkin@yandex.ru">
+    <meta name="og:phone_number" content="+7 (902) 230-44-20">
+    <meta property="og:url" content="http://robotradecoders.ru/"/>
+    <meta property="og:image" content="http://robotradecoders.ru/img/preview.jpg"/>
+    <meta property="og:image:width" content="960"/>
+    <meta property="og:image:height" content="720"/>
+    <!--DC Meta tags-->
+    <meta name="DC.title" content="Разработка торговых роботов MetaTrader 4 и ПО на заказ">
+    <meta name="DC.creator" content="RoboTradeCoders">
+    <meta name="DC.creator.name" content="RoboTradeCoders">
+    <meta name="DC.subject"
+          content="торговый робот, автоматическая торговля, разработка, торговая система, MetaTrader, скрипт, индикатор, торговая платформа">
+    <meta name="DC.description"
+          content="Индивидуальная разработка торговых роботов, советников, индикаторов, скриптов на заказ для MetaTrader 4 на заказ. Все делаем в оговоренные сроки">
+    <meta name="DC.publisher" content="RoboTradeCoders">
+    <meta name="DC.publisher.url" content="https://RoboTradeCoders.com">
+    <meta name="DC.contributor" content="Разработка торговых роботов MetaTrader 4">
+    <meta name="DC.date" content="2018-09-20">
+    <meta name="DC.type" content="Text">
+    <meta name="DC.format" content="text/html">
+    <meta name="DC.identifier" content="https://RoboTradeCoders.com">
+    <meta name="DC.language" content="ru-RU">
+    <meta name="DC.coverage" content="Russia (Federation) Siberia">
+    <meta name="DC.rights" content="RoboTradeCoders, владелец всех прав">
+    <!--[if lt IE 9]>
+    <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script><![end if]-->
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#fff">
+    <!-- Custom Browsers Color End -->
+</head>
+<body cz-shortcut-listen="true" class="">
+<nav class="col-7 mm-menu mm-menu_offcanvas mm-menu_pagedim-black mm-menu_position-right mm-menu_theme-dark"
+     id="mm-main-menu" aria-hidden="true">
+    <div class="mm-panels">
+        <div id="mm-2" class="mm-panel mm-panel_has-navbar mm-panel_opened">
+            <div class="mm-navbar"><a class="mm-navbar__title">Меню</a></div>
+            <ul class="main-menu scroll mm-listview">
+                <li class="mm-listitem"><a title="Главная" href="#">Главная</a></li>
+                <li class="mm-listitem"><a title="Примеры заданий" href="index.html#market" onclick="window.location.reload();">Примеры заданий</a></li>
+                <li class="mm-listitem"><a title="Цены" href="index.html#price" onclick="window.location.reload();">Цены</a>
+                </li>
+                <li class="mm-listitem"><a title="Способы оплаты" href="index.html#reviews" onclick="window.location.reload();">Отзывы</a>
+                </li>
+                <li class="mm-listitem"><a title="Вопросы" href="index.html#faq" onclick="window.location.reload();">Вопросы</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</nav>
+<nav class="col-7 mm-menu mm-menu_offcanvas mm-menu_pagedim-black mm-menu_position-right mm-menu_theme-dark"
+     id="mm-main-menu" aria-hidden="true">
+    <div class="mm-panels">
+        <div id="mm-1" class="mm-panel mm-panel_has-navbar mm-panel_opened">
+            <div class="mm-navbar"><a class="mm-navbar__title">Меню</a></div>
+            <ul class="main-menu scroll mm-listview">
+                <li class="mm-listitem"><a title="Главная" href="#">Главная</a></li>
+                <li class="mm-listitem"><a title="Примеры заданий" href="index.html#market" onclick="window.location.reload();">Примеры заданий</a></li>
+                <li class="mm-listitem"><a title="Цены" href="index.html#price" onclick="window.location.reload();">Цены</a>
+                </li>
+                <li class="mm-listitem"><a title="Способы оплаты" href="index.html#reviews" onclick="window.location.reload();">Отзывы</a>
+                </li>
+                <li class="mm-listitem"><a title="Вопросы" href="index.html#faq" onclick="window.location.reload();">Вопросы</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</nav>
+<div id="mm-0" class="mm-page mm-slideout">
+    <div id="my-header">
+        <header class="header landing-header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!--<div class="col-auto">
+                        <<a href="#" class="logo"><img
+                                src="./img/logo.jpg"
+                                alt="RoboTradeCoders programming"></a>
+                    </div>-->
+                    <div class="col no-gutter-left">
+                        <b><span class="title">Robo<span>Trade</span>Coders</span></b>
+                        <!--<p class="description">Обучение &amp; Разработка</p>-->
+                    </div>
+                    <nav class="col-7" id="main-menu">
+                        <ul class="main-menu scroll">
+                            <li><a title="Главная" href="#">Главная</a></li>
+                            <li><a title="Примеры заданий"
+                                   href="index.html#market" onclick="window.location.reload();">Примеры заданий</a></li>
+                            <li><a title="Цены" href="index.html#price" onclick="window.location.reload();">Цены</a>
+                            </li>
+                            <li><a title="Способы оплаты" href="index.html#reviews" onclick="window.location.reload();">Отзывы</a>
+                            </li>
+                            <li><a title="Вопросы" href="index.html#faq" onclick="window.location.reload();">Вопросы</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="col-auto col-xl-2 call">
+                        <p class="tel">+7 (902) 230-44-20</p>
+                        <a href=""
+                           class="link" data-fancybox="" data-src="#modal-window" data-touch="false">Заказать звонок</a><br>
+                        <a href="">
+                            <span class="ceFlags Russian_Federation middle inlineblock"></span>
+                        </a>
+                        <a href="">
+                            <span class="ceFlags UK middle inlineblock"></span>
+                        </a>
+                        <a rel="nofollow" href="">
+                            <span class="ceFlags China middle inlineblock"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#main-menu"
+               class="hamburger hamburger--slider"><span class="hamburger-box"><span
+                    class="hamburger-inner"></span></span></a>
+        </header>
+    </div>
+    <div id="modal-window" class="fancybox-content" style="display: none;">
+        <h2 class="title">Оставьте заявку</h2>
+        <p class="description">на <strong class="accent">бесплатную</strong> консультацию<br>специалиста RoboTradeCoders</p>
+        <form method="post" action="php/sendmail.php" id="contact-form" enctype="multipart/form-data">
+            <label>
+                <input type="text" name="name" placeholder="Ваше имя" required="">
+                <i class="fas fa-address-book"></i>
+            </label>
+            <label>
+                <input type="tel" name="tel" placeholder="Ваш телефон" required="">
+                <i class="fas fa-phone"></i>
+            </label>
+            <label>
+                <input type="email" name="email" placeholder="Ваш e-mail" required="">
+                <i class="fas fa-envelope"></i>
+            </label>
+            <label>
+                <button type="button" id="file-upload" class="file-upload"><b>Ваше техническое задание <br>(если готовы сейчас сделать заказ)</b></button>
+                <input type="file" name="file" id="file" class="d-none">
+            </label>
+            <a href="docs/example.docx">Пример технического задания</a>
+            <button class="button" name="send" type="submit">Отправить</button>
+        </form>
+    </div>
+</div>
+
+<main id="my-content">
+    <div class="s-background s-bg-1">
+    <section class="s-home s-home-landing s-home-programming" id="home">
+        <h1 class="title"><span>Закажи разработку собственного </span> <span>торгового индикатора/робота/скрипта! </span> <span>Профессиональное программное обеспечение для трейдеров </span> </h1>
+        <br>
+        <div class="programs">
+            <a href="#" class="program">MetaTrader 4/5</a>
+                        <a href="#" class="program">TradingView</a>
+        </div>
+        <div class="programs">
+            <a href="#" class="program">QUIK</a>
+            <a href="#" class="program">Ninja Trader</a>
+           <a href="#" class="program">Ваша торговая платформа</a>
+         </div>
+        <div class="s-opinion">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-xl-6">
+                        <div class="card opinion">
+                            <a href="video/review_traider.mp4" class="video" data-fancybox="review">
+                                <img src="./img/review_traider.jpg"
+                                     alt="Отзыв Имя Фамилия" class="img-responsive img-width">
+                            </a>
+                            <p class="name">
+                                <span style="font-weight: 100; font-size: 14px;"></span>
+                            </p>
+                            <p class="description" style="text-align: left;">
+                                
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-6 card center">
+                        <ul>
+       <span> Преимущества роботов:   </p>
+                    <p class="card-desc">                  <li><span>Робот можно протестировать в тестере стратегий. Это займет 2 минуты,
+                                но трейдер узнает правду о прибыльности своей торговой стратегии. Узнает слабые и сильные
+                                стороны, и если раньше были просадки, то трейдер сможет понять почему они случались и как их устранить.</span></li>
+                            <li><span>Освобождается много времени и энергии, которые тратились на торговлю.</span></li>
+                            <li><span>Робот в рынке 24 часа в сутки, в то время как трейдер может торговать только 8/12 часов
+                                в день, пропуская 16/12 торговых часов и соответственно от 40% прибыльных сигналов.</span></li>
+                            <li><span>Робот может торговать на сотнях валютных пар одновременно, на всех таймфремах доступных
+                                в MetaTrader 4/5, в то время как трейдер одновременно обычно использует только 1 график.</span></li>
+                            <li><span>Не нужно испытывать стресс, в момент торгов.</span></li>
+                            <li><span>Робот принимает решение в доли секунды, действуя строго по прописанной стратегии и риск менеджменту.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+        <div class="contact-links">
+            <a href="https://vk.com/club192519901">Написать нам в VK</a>
+            <a href="whatsapp://send?phone=+79625942362">Написать нам в WhatsApp</a>
+            <a href="viber://add?number=79625942362">Написать нам в Viber</a>
+        </div>
+
+        <a href=""
+           class="button button-100" data-fancybox="" data-src="#modal-window" data-touch="false">Заказать
+            разработку</a>
+    </section> <!-- /.s-home -->
+  <br> <br> </div>
+    <div class="s-background s-bg-2">
+    <section class="container s-card-list">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-xl-4">
+                <div class="card" style="height: 181px;">
+                    <h2 class="card-title"><i class="icon fas fa-shield-alt"></i>Конфиденциальность</h2>
+                    <p class="card-desc">Ваш торговый алгоритм не передается третьим лицам.
+                       </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+                <div class="card" style="height: 181px;">
+                    <h2 class="card-title"><i class="icon fas fa-tachometer-alt"></i>Быстрая разработка</h2>
+                    <p class="card-desc">Разрабатываем продукт в необходимые и адекватные сроки.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+                <div class="card" style="height: 181px;">
+                    <h2 class="card-title"><i class="icon fas fa-check"></i>Гарантируем качество</h2>
+                    <p class="card-desc">Конечный продукт будет соответствовать техническому заданию.
+                        В обратном случае - исправления за нас счет.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-4">
+               
+                </div>
+            </div>
+        <div class="row content no-gutters justify-content-center">      <div class="col-12 col-md-6 col-xl-4">
+                <div class="card" style="height: 181px;">
+                    <h2 class="card-title"><i class="icon fas fa-headset"></i>Полное сопровождение</h2>
+                    <p class="card-desc">Ответы на все интересующие Вас вопросы до/во время/после написания робота. </p>
+                    <p class="card-desc"> Skype-консультации. </p>
+                    <p class="card-desc">Доработка/улучшение робота для максимальной прибыльности.</p>
+                </div>
+                                                            </div>
+    </section>
+
+    <section class="s-exp" id="market">
+        <h2 class="section-title section-title-super-small">7 лет опыта реализации нестандартных задач</h2>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-xl-4 card">
+                    <h3 class="title">Рынки</h3>
+                    <ul>
+                        <li>Фондовая биржа</li>
+                        <li>Валютная биржа</li>
+                        <li>Любая финансовая биржа</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-xl-4 card center">
+                    <h3 class="title">Примеры заданий</h3>
+                    <ul>
+                        <li>Роботы на индикаторах</li>
+                        <li>Свечной анализ (price action)</li>
+                        <li>Сеточные роботы</li>
+                        <li>На объемах</li>
+                        <li>Нейросетевой анализ</li>
+                        <li>Математические модели</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-xl-4 card">
+                    <h3 class="title">Платформы</h3>
+                    <ul>
+                        <li>MetaTrader 4/5</li>
+                        <li>QUIK</li>
+                        <li>TradingView</li>
+                        <li>NinjaTrader</li>
+                        <li>Ваша торговая платформа</li>
+                        <li>Любой брокер</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-line">
+            <p class="description">Реализовано более <strong class="accent">500</strong> проектов</p>
+            <p><strong class="accent">(около 10 000 подпроектов)</strong></p>
+            <a href=""
+               class="button button-100" data-fancybox="" data-src="#modal-window" data-touch="false">Заказать
+                разработку</a>
+        </div>
+    </section>
+    </div>
+
+    <div class="s-background s-bg-3">
+    <section class="s-process s-process-small" id="process">
+        <div class="container">
+            <div class="row">
+                <h2 class="col section-title section-title-orange section-title-super-small">Порядок оказания услуг</h2>
+            </div>
+            <div class="row content no-gutters justify-content-center">
+                <div class="item col-7 col-sm-6 col-md-4 col-lg">
+                    <i class="icon far fa-file-alt"></i>
+                    <p class="description">Вы присылаете <br>тех. задание <br>и свои контакты</p>
+                </div>
+                <div class="item col-7 col-sm-6 col-md-4 col-lg">
+                    <i class="icon fas fa-money-check-alt"></i>
+                    <p class="description">Мы оцениваем его <br>и сообщаем цену</p>
+                </div>
+
+                <div class="item col-7 col-sm-6 col-md-4 col-lg">
+                    <i class="icon far fa-credit-card"></i>
+                    <p class="description">Предоплата <br>по договоренности</p>
+                </div>
+                <div class="item col-7 col-sm-6 col-md-4 col-lg">
+                    <i class="icon fas fa-wrench"></i>
+                    <p class="description">Разработка и проверка<br>работоспособности<br>продукта</p>
+                </div>
+                <div class="item col-7 col-sm-6 col-md-4 col-lg without">
+                    <i class="icon far fa-handshake"></i>
+                    <p class="description">Передача<br>проекта</p>
+                </div>
+            </div>
+        </div>
+    </section> <!-- /.s-process -->
+
+
+    <section class="s-price">
+        <h2 class="background section-title section-title-white section-title-super-small" id="price">Цены</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col card">
+                    <div class="row no-gutters">
+                        <div class="col first price-description">
+                            <p>Разработка каждого робота индивидуальна.</p>
+                            <p>Цена зависит от количества часов, которые программист должен выделить на разработку, и, сложности кода.</p>
+                            <p>Одно незначительное дополнение может изменить существенно сроки и цену, как в большую, так и в меньшую сторону.</p>
+                            <p>В среднем, заказы на MT5 дороже заказов MT4 на 60%. Чтобы узнать точную цену - напишите нам.</p>
+                            <p>Наши разработчики обсудят с Вами детали Технического задания и сообщат Вам точную цену проекта.</p>
+                        </div>
+                    </div>
+                    <p class="link"><a
+                            href=""
+                            class="button button-100" data-fancybox="" data-src="#modal-window" data-touch="false">Заказать
+                        разработку</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--<section class="s-faq">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 style="display: none;">Значимость торговых робот</h2>
+                    <p>
+                            <span style="font-size: 18px; line-height: 30px; text-align: justify; -moz-text-align-last: justify;
+  text-align-last: justify; display: inline-block;">
+		                       Валютный рынок наиболее популярен среди трейдеров и финансовых аналитиков. Можно с уверенностью сказать, что подавляющее число трейдеров используют платформу MetaTrader 4 для аналитики и совершении торговых операций. Торговый терминал MT4 оборудован большим набором технических индикаторов и широким аналитическим инструментарием позволяющим производить разностороннюю аналитику. Благодаря встроенному в платформу языку программирования MQL4, трейдер имеет возможность создавать собственных торговых роботов и технические индикаторы, а имеющийся тестер стратегий позволит протестировать вашу разработку за считанные минуты.
+		                    </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>!-->
+    <section class="s-reviews tab-home" id="reviews">
+        <div class="container">
+            <div class="row">
+                <h2 class="col section-title section-title-orange section-title-small">Отзывы</h2>
+            </div>
+            <div class="row">
+                <div class="col owl-carousel carousel owl-loaded owl-drag">
+
+                    <div class="owl-stage-outer owl-height" style="height: 499.094px;">
+                        <div class="owl-stage"
+                             style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 3250px; padding-left: 5px; padding-right: 5px;">
+                            <div class="owl-item active" style="width: 340px; margin-right: 20px;">
+                                <div class="card carousel-item" style="height: 439.109px;">
+                                    <a href="video/review_maxim.mp4" class="video" data-fancybox="review"
+                                       savefrom_lm_index="2" savefrom_lm="1">
+                                        <img src="./img/review_maxim.jpg"
+                                             alt="Отзыв Максим Буралкин" class="img-responsive img-width">
+                                    </a>
+                                    <p class="name">Максим Буралкин<br>
+                                        <span style="font-weight: 100; font-size: 14px;">(Начинающий трейдер)</span>
+                                    </p>
+                                    <p class="description" style="text-align: center;">
+                                        <a href="https://vk.com/mburalkin">Страница ВК</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="owl-item active" style="width: 340px; margin-right: 20px;">
+                                <div class="card carousel-item" style="height: 439.109px;">
+                                    <a href="video/review_igor.mp4" class="video" data-fancybox="review"
+                                       savefrom_lm_index="2" savefrom_lm="1">
+                                        <img src="./img/review_igor.jpg"
+                                             alt="Отзыв Игорь Арефьев" class="img-responsive img-width">
+                                    </a>
+                                    <p class="name">Игорь Арефьев<br>
+                                        <span style="font-weight: 100; font-size: 14px;">(Мультивалютный трейдер)</span>
+                                    </p>
+                                    <p class="description" style="text-align: left;">
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="owl-item active" style="width: 340px; margin-right: 20px;">
+                                <div class="card carousel-item" style="height: 439.109px;">
+                                    <a href="video/review_vladimir.mp4" class="video" data-fancybox="review"
+                                       savefrom_lm_index="2" savefrom_lm="1">
+                                        <img src="./img/review_vladimir.jpg"
+                                             alt="Отзыв Владимир Тюменцев" class="img-responsive img-width">
+                                    </a>
+                                    <p class="name">Владимир Тюменцев<br>
+                                        <span style="font-weight: 100; font-size: 14px;">(Профессиональный трейдер-аналитик)</span>
+                                    </p>
+                                    <p class="description" style="text-align: left;">
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-nav">
+                        <button type="button" role="presentation" class="owl-prev disabled"><i
+                                class="fa fa-angle-left"></i></button>
+                        <button type="button" role="presentation" class="owl-next disabled"><i class="fa fa-angle-right"></i>
+                        </button>
+                    </div>
+                    <div class="owl-dots disabled"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <div class="s-background s-bg-4">
+    <section class="s-rialto s-rialto-off" id="payment">
+        <div class="container">
+            <div class="row">
+                <h2 class="col section-title section-title-super-small section-title-orange">Способы оплаты</h2>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-10 col-sm-auto"><img
+                        src="./img/pay1.png" alt="brand"></div>
+                <div class="col-10 col-sm-auto"><img
+                        src="./img/pay3.png" alt="brand"></div>
+                <div class="col-10 col-sm-auto"><img
+                        src="./img/pay5.png" alt="brand"></div>
+                <div class="col-10 col-sm-auto"><img
+                        src="./img/pay7.png" alt="brand"></div>
+            </div>
+        </div>
+    </section> <!-- /.s-rialto -->
+
+    <section class="s-faq" id="faq">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="section-title section-title-super-small">Часто задаваемые вопросы</h2>
+                    <ul>
+                        <li class="card closed">
+                            <h4 class="title">Кто мы?</h4>
+                            <p class="description" style="display: none;">
+                                Профессиональная команда программистов справится с задачей в кратчайшие и разумные сроки.
+                            </p>
+                        </li>
+                        <li class="card closed">
+                            <h4 class="title">Плюсы роботов</h4>
+                            <p class="description" style="display: none;">
+                                На сегодняшний день более 60 % рыночных операций совершают роботы (автоматизированные торговые системы). Многие фонды активно переходят на роботы. Причём не какие-то фонды с минимальным балансом, а международные инвестиционные банки. Подробней об этом, можно узнать из фильма о высокочастотном трейдинге "Код Уолл Стрит". Почему фонды и трейдеры переходят на роботы? Все очень просто:
+                                <br>-1- Экономия своего времени.
+                                Обычно трейдеры тратят 70-90 % времени работы, на торговлю, и только 30-10%, на изучения рынка. С помощью роботов человеку не нужно сидеть за торговым монитором по 8-12 часов, а можно посвятить это время семье или изучению новых рынков.
+                                <br>-2- Роботу не нужен отдых.
+                                Даже при работе, на рынке 8 - 12 часов, трейдер может терять 12-16 часов ночной работы рынка. Или может делать перерывы в торговле ( обычно это в сумме 50%-70% работы рынка)
+                                <br>-3- Роботы необходимы чтобы «расширить» себя на рынке.
+                                Даже из рабочих 8-12 часов, трейдер, обычно не анализирует все валютные пары. Робот же, может торговать без проблем на 100-200 и даже 300 валютных пар без нагрузки, при этом на всех ТаймФреймах.
+                                <br>-4 – Робот можно протестировать на всей торговой истории
+                                Робот можно протестировать, увидев сильные и слабые стороны своей стратегии. В результате, можно как в конструкторе добавить/удалить определенные механизмы анализа и индикаторы.
+                                <br>-5 - Теперь не нужно испытывать стресс.
+                                <br>-6 – Робот не упускает возможности.
+                                Роботы принимают решения в доли секунд.
+                                <br>-7 - В роботы можно прописать строгий риск менеджмент.
+                                Таким образом не удивительно, что международные фонды выбирают вектор развития в сторону автотрейдинга. Роботы - это инновация, и на сегодняшний день эта инновация совершает 60% сделок фондового рынка. По мнению экспертов, процентность операций, сделанных роботами постоянно растёт и будет продолжать расти. Не тратьте время, которое можно провести с семьёй, на то, что могут сделать за вас роботы!
+                            </p>
+                        </li>
+                        <li class="card closed">
+                            <h4 class="title">В чем минусы роботов. Почему у некоторых людей не получается работать с роботами?</h4>
+                            <p class="description" style="display: none;">
+                                <br>- 1 - Скачивание бесплатных роботов.
+                                Люди часто надеются, что скачав на каком-то сайте, бесплатный робот, получат генерацию прибыли. Нужно понимать, что написать по-настоящему прибыльный робот - это большой проект. Часто роботы пишут по отработанной годами стратегии. Создатели сидят за написанием кода недели или месяцы. И любой здравомыслящий трейдер, написавший прибыльный робот, - не выложит его в сеть. Бесплатные роботы, обычно либо торгуют в убыток, либо в хорошем варианте закрывают квартал в ноль. Не тратьте на это время.
+                                <br>- 2 - Покупка дешевых советников.
+                                Люди часто покупают роботы в среднем за 15-150 долл. в надежде на сказочную прибыль. Мошенники обманывают людей, обещая, что эти роботы принесут от 10 до 300% в месяц. На самом же деле в 95 % случаев такие роботы убыточные. Как правило, прибыльные роботы - это большой проект, и навряд ли создатель продаст его менее чем за 2 тыс. долл. Если подумать здраво - какой смысл человеку продавать роботы по 15 - 150 долл. если у него прибыльный робот?
+                                <br>- 3 - Не качественный тест.
+                                Покупка дорогих роботов (от 1-2 тыс.долл.) и просто качественное написание многим принесла прибыль. Эти роботы конечно дорогие и доступны не всем. Как правило, эти роботы вообще не продаются, а создатели просто требуют % от прибыли, а еще чаще, это частная разработка банка или фонда, и она вовсе скрыта от посторонних. Но просто дорогой ценник, или престиж трейдера-создателя не дают никаких гарантий.
+                                Важно протестировать робот и определить его прибыльность, уровень риска, ликвидность рынка и т.д... Просмотреть его историю... Как правило, создатели роботов не дают описание стратегии, чтобы понять, почему робот прибыльный; и не дают возможность протестировать робот в тестерах. Их можно понять, т.к. они заботятся о конфиденциальности стратегии.
+                                Если качественный тест не удается сделать,- можно попросить стейтмент. В основном, опытные банкиры, инвесторы и трейдеры берут стейтмент с историей не менее 6 мес. При этом, важно учитывать сумму с которой работал робот. К примеру если инвестор хочет проинвестировать 1 тыс. долл, то робот должен был торговать с 1-2 тыс. долл. хотя бы 3 месяца. Это правило не только для роботов, а для инвестирования в целом..
+                                <br>- 4 - Невнимательность и спешка.
+                                Свои роботы, можно написать, но не помешает предварительно посмотреть исторические данные - действительно ли стратегия прибыльна? Стоит ли игра свеч? Часто трейдеры делают заказы на написание, не посмотрев график с историей по инструменту хотя бы за 2 месяца. Также важно учитывать, что индикаторы, используемые стратегией, - могут перерисовываться. Необходимо так же прекрасно понимать работу встроенных индикаторов робота и продумывать не только качественные, но и количественные аспекты торговой стратегии. В заключении напомню, что людям стоит действовать аккуратно. Учтите, что покупка нормального робота либо стоит от 1-2 т. долл., либо требует вложений от 50 тыс. долл. И обычно они не доступны обычным трейдерам, т.к. чаще всего - это частная разработка фонда или банка.
+                                Не видитесь на смешные предложения за 15 долл. Что касается заказа написания робота по своей стратегии, нужно учитывать, что обычно прибыльные роботы переписывают и дополняют 3-4 раза, усиливая его и модифицируя. Как уже было написано: прибыльный робот - это большой проект!
+                            </p>
+                        </li>
+                        <li class="card closed">
+                            <h4 class="title">Сколько в среднем составляет стоимость разработки торгового робота?</h4>
+                            <p class="description" style="display: none;">
+                                Цена зависит от сложности алгоритма. Большая часть заказов находится в диапазоне от 200$ до 600$. Системы, имеющие более сложную техническую реализацию находятся в диапазоне от 1000$ до 5000$
+                            </p>
+                        </li>
+                        <li class="card closed">
+                            <h4 class="title">У других разработчиков дешевле, почему я должен работать с вами?</h4>
+                            <p class="description" style="display: none;">
+                                Мы прекрасно знаем рынок разработки торговых роботов. Если вам предложили сделать работу дешевле, то делайте, а после возвращайтесь к нам и будем вместе доделывать и переделывать, то что другие разработчики не смогли или не захотели
+                            </p>
+                        </li>
+                    </ul>
+					<br><br><br>
+                </div>
+            </div>
+        </div> <!-- /.row -->
+    </section> <!-- /.s-faq -->
+    </div>
+</main>
+
+<footer id="my-footer">
+    <div class="site-footer">
+        <div class="top-line">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm col-lg-auto col-xl-4 contact">
+                        <div class="addr">
+                            <p class="phone text-white">+7 (902) 230-44-20</p>
+                            <!--<p class="office">Томск, Гоголя 15, офис 100</p>-->
+                        </div>
+                        <div class="mail">
+                            <p>По вопросам пишите на:<span class="email text-white">RoboTradeCoders@yandex.ru</span></p>
+                        </div>
+                    </div>
+                    <nav class="col-12 col-lg order-last order-lg-0 footer-menu">
+                        <p class="footer-title">Меню</p>
+                        <ul class="row no-gutters">
+                            <li class="col-sm-6"><a title="Главная" href="#">Главная</a></li>
+                            <li class="col-sm-6"><a title="Отзывы" href="#reviews">Отзывы</a></li>
+                            <li class="col-sm-6"><a title="Примеры заданий" href="#market">Примеры заданий</a></li>
+                            <li class="col-sm-6"><a title="Вопросы" href="#faq">Вопросы</a></li>
+                            <li class="col-sm-6"><a title="Цены" href="#price">Цены</a></li>
+                        </ul>
+                    </nav>
+                    <div class="col-auto col-lg-3 other">
+                        <!--<div class="search">
+                            <label>
+                                <p class="footer-title">Поиск</p>
+                                <input type="text" placeholder="Введите текст поиска">
+                                <i class="icon-search"></i>
+                            </label>
+                        </div>-->
+                        <div class="social">
+                            <p class="footer-title">RoboTradeCoders в соц.сетях</p>
+                            <ul>
+                                <li><a href="https://vk.com/club192519901" class="text-white" target="_blank"><i
+                                        class="fab fa-vk"></i></a></li>
+                                <!--<li><a href="#" class="text-white"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#" class="text-white"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#" class="text-white"><i class="fab fa-odnoklassniki"></i></a></li>-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-line">
+            <div class="container">
+                <div class="row">
+                    <p class="col">© RoboTradeCoders International 2020</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<link rel="stylesheet" href="./css/fonts.css">
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/plugins.css">
+<link rel="stylesheet" href="./css/main.css">
+<link href="./css/sweetalert.min.css" rel="stylesheet">
+
+<script async="" src="./js/analytics.js"></script>
+<script type="text/javascript" async=""
+        src="./js/watch.js"></script>
+<script src="./js/sweetalert.min.js"></script>
+
+<script src="./js/scripts.min.js"></script>
+<script src="./js/common.min.js"></script>
+
+<script>
+    var fileInput = $('#file');
+    $( '#file-upload' ).click(function(){
+        fileInput.trigger('click');
+        fileInput.bind({
+            change: function() {
+                var files = this.files;
+                $.each(files, function(i, file) {
+                    var reader = new FileReader();
+                    reader.onload = function(e) {
+                        document.querySelector('#file-upload').innerHTML = file.name;
+                        document.querySelector('#file-upload').innerText = file.name;
+                        document.querySelector('#file-upload').textContent = file.name;
+                    };
+                    reader.readAsDataURL(file);
+                });
+            }
+        });
+    });
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script>
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function () {
+            try {
+                w.yaCounter42089564 = new Ya.Metrika({
+                    id: 42089564,
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true,
+                    webvisor: true
+                });
+            } catch (e) {
+            }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () {
+                n.parentNode.insertBefore(s, n);
+            };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else {
+            f();
+        }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript>&lt;div&gt;&lt;img src="https://mc.yandex.ru/watch/42089564" style="position:absolute; left:-9999px;" alt="" /&gt;&lt;/div&gt;</noscript>
+<!-- /Yandex.Metrika counter -->
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-86532128-2', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+
+<div class="mm-page__blocker mm-slideout"></div>
+</body>
+</html>
