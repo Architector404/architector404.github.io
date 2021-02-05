@@ -1,0 +1,368 @@
+.wrap
+{
+    width: 100%;
+    margin: 0 auto;
+}
+.btn
+{
+    padding: 15px 30px;
+}
+
+.header
+{
+    width: 100%;
+    background-color: #fff;
+    font-family: "Segoe UI";
+    font-size: 14px;
+    line-height: 1.9;
+}
+.logo-min
+{
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+    margin-top: 15px;
+    vertical-align: top;
+    background: url("../img/logo-min.png") no-repeat 50% 50%;
+    background-size: cover;
+    -webkit-box-shadow: 15px 15px 15px -10px #CCCCCC;
+    box-shadow: 15px 15px 15px -10px #CCCCCC;
+}
+.header a
+{
+    display: inline-block;
+    margin-top: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+}
+.register
+{
+    display: inline-block;
+    margin: 15px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background: #FCCA0D;
+}
+
+/*font-size: 1.2vmax;*/
+
+.promo
+{
+    min-height: 730px;
+    background: url("../img/backgrounds/promo-bg.jpg")no-repeat;
+    background-size: cover;
+}
+.promo h1
+{
+    padding-top: 75px;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 62px;
+    color: #ffffff;
+}
+.promo p
+{
+    padding: 35px 0;
+    line-height: 29px;
+    color: #ffffff;
+}
+.promo .get-start
+{
+    font-weight: bold;
+    background: #fff;
+    border-radius: 0 10px 10px 0;
+}
+
+.how-it-works
+{
+    min-height: 300px;
+    margin-top: -5px;
+    position: relative;
+    background: #EEF0F2;
+}
+.how-it-works:before
+{
+    content: "";
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    top: 150px;
+    left: 4%;
+    vertical-align: middle;
+    background: url("../img/backgrounds/ruler.png") no-repeat left;
+    background-size: contain;
+}
+.how-it-works:after
+{
+    content: "";
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    top: -120px;
+    right: 0;
+    vertical-align: middle;
+    background: url("../img/backgrounds/coffe.png") no-repeat right;
+    background-size: contain;
+}
+.how-it-works a
+{
+    width: 100%;
+    height: 287px;
+    display: inline-block;
+    background: url("../img/content/tablet.png") no-repeat;
+    background-size: contain;
+}
+.how-it-works h2
+{
+    padding-top: 50px;
+}
+.how-it-works p
+{
+    font-size: 20px;
+}
+
+.advantages
+{
+    min-height: 800px;
+    background: #EEF0F2;
+}
+.advantages h2
+{
+    padding: 50px 0;
+}
+.img-clock
+{
+    width: 100%;
+    height: 50%;
+    margin: 50px 0;
+    background: url("../img/content/calendar.png") no-repeat center;
+    background-size: contain;
+}
+.advantages p, .advantages h4
+{
+    font-family: "Roboto Cn";
+}
+.advantages p
+{
+    margin-bottom: 0;
+}
+.advantages h4 span
+{
+    color: #7719A4;
+}
+.advantages .get-start
+{
+    margin-top: 25px;
+    background: #FEC421;
+    border-radius: 0 10px 10px 0;
+}
+.advantages .adv
+{
+    width: 310px;
+    display: block;
+    margin-bottom: 43px;
+    padding: 18px;
+    padding-left: 80px;
+    border-radius: 10px;
+    background: #ffffff;
+    -webkit-box-shadow: 15px 15px 15px -10px #CCCCCC;
+    box-shadow: 15px 15px 15px -10px #CCCCCC;
+}
+.adv-money, .adv-calc, .adv-time, .adv-globus, .adv-coin
+{
+    position: relative;
+}
+.adv-calc
+{
+    margin-left: 10%;
+}
+.adv-time
+{
+    margin-left: 20%;
+}
+.adv-globus
+{
+    margin-left: 10%;
+}
+.advantages .adv-money:before
+{
+    content: "";
+    width: 112px;
+    height: 102px;
+    position: absolute;
+    top: -15px;
+    left: -50px;
+    margin-right: 5px;
+    vertical-align: middle;
+    background-image: url("../img/icons/money.png");
+    background-size: cover;
+}
+.advantages .adv-calc:before
+{
+    content: "";
+    width: 92px;
+    height: 97px;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    margin-right: 5px;
+    vertical-align: middle;
+    background-image: url("../img/icons/calc.png");
+    background-size: cover;
+}
+.advantages .adv-time:before
+{
+    content: "";
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -15px;
+    left: -25px;
+    margin-right: 5px;
+    vertical-align: middle;
+    background-image: url("../img/icons/clock.png");
+    background-size: cover;
+}
+.advantages .adv-globus:before
+{
+    content: "";
+    width: 67px;
+    height: 92px;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    margin-right: 5px;
+    vertical-align: middle;
+    background-image: url("../img/icons/globus.png");
+    background-size: cover;
+}
+.advantages .adv-coin:before
+{
+    content: "";
+    width: 56px;
+    height: 76px;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    margin-right: 5px;
+    vertical-align: middle;
+    background-image: url("../img/icons/coin.png");
+    background-size: cover;
+}
+
+.vawe-box
+{
+    background: url("../img/backgrounds/vawe-bg.jpg") no-repeat;
+    background-size: cover;
+}
+.reviews
+{
+    min-height: 700px;
+}
+.reviews h2
+{
+    padding: 50px 0;
+}
+.my-flipster
+{
+    padding: 50px 0 37px 0;
+    background: url("../img/backgrounds/phone.png")no-repeat 50%;
+    background-size: 20% 100%;
+}
+.my-flipster .review
+{
+    width: 200px;
+    padding-top: 15px;
+    background: #ffffff;
+}
+.my-flipster .yellow-line
+{
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+    border-bottom: 5px solid #FCCA0D;
+}
+.my-flipster h4
+{
+    margin-bottom: 0;
+    font-weight: 600;
+}
+.my-flipster p
+{
+    font-size: 16px;
+    padding: 20px 10px 36px 10px;
+    text-align: left;
+}
+
+.count
+{
+    min-height: 400px;
+}
+.img-clock-2
+{
+    width: 100%;
+    height: 100%;
+    margin: 50px 0;
+    background: url("../img/content/clock.png") no-repeat center;
+    background-size: contain;
+}
+.count h2
+{
+    padding-top: 100px;
+    color: #fff;
+}
+.count p
+{
+    padding: 30px 0;
+    color: #fff;
+}
+.count .to-count
+{
+    padding: 10px 30px;
+    background: #FEC421;
+    border-radius: 0 10px 10px 0;
+}
+
+.footer
+{
+    margin-top: -5px;
+    color: #ffffff;
+    background: #333333;
+}
+.footer .logo
+{
+    width: 125px;
+    height: 125px;
+    display: inline-block;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    background: url("../img/logo.png") no-repeat 50% 50%;
+    background-size: cover;
+    -webkit-box-shadow: 15px 15px 15px -10px #000000;
+    box-shadow: 15px 15px 15px -10px #000000;
+}
+.footer h4
+{
+    margin-top: 100px;
+
+}
+.footer .yellow-line
+{
+    width: 40%;
+    margin-bottom: 30px;
+    border-bottom: 5px solid #FCCA0D;
+}
+.footer a
+{
+    text-decoration: none;
+    color: #ffffff;
+}
+.footer .social
+{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 18px;
+}
