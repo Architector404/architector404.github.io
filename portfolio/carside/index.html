@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fonts.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.css" />
+    <link rel="stylesheet" href="css/plugins.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                    <div id="logo" class="logo"></div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div id="description" class="description">Прокат автомобилей в Санкт-Петербурге</div>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
+                    <div id="messengers" class="messengers">
+                        <a href="#" class="tg-c"></a>
+                        <a href="#" class="wa-c"></a>
+                        <a href="#" class="vb-c"></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                    <div id="phonenum-1" class="phonenum">+7 (812) 312-79-96 <br><span>Городской номер</span></div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                    <div id="phonenum-2" class="phonenum">+7 (921) 391-21-21 <br><span>Ежедневно с 9:00-22:00</span></div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                    <a href="#smallModal" class="call" data-toggle="modal">Мы перезвоним</a>
+                    <a href="#smallModal" class="call-min" data-toggle="modal">&nbsp;</a>
+                    <div class="dropdown">
+                        <div class="select">
+                            <span>ENG</span>
+                            <i class="fa fa-chevron-left"></i>
+                        </div>
+                        <input type="hidden" name="lang">
+                        <ul class="dropdown-menu">
+                            <li id="lang1">ENG</li>
+                            <li id="lang2">RU</li>
+                            <li id="lang3">中文</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 text-right">
+                    <nav class="nav">
+                        <ul id="mainMenu" class="mainMenu">
+                            <li><a href="#">Каталог машин</a></li>
+                            <li><a href="#">Услуги</a>
+                                <ul id="mainSubmenu" class="mainSubmenu text-left">
+                                    <li><a href="#">Долгосрочная аренда</a></li>
+                                    <li><a href="#">Автомобили на свадьбу</a></li>
+                                    <li><a href="#">Аренда авто с водителем</a></li>
+                                    <li><a href="#">Гринкарта</a></li>
+                                    <li><a href="#">Трансфер</a></li>
+                                    <li><a href="#">Дополнительные услуги</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <button class="btn quick-pick">Быстрый подбор</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="drop-form">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2">
+                    <input type="text" name="name" id="name2" class="request-form-input" placeholder="Имя">
+                    <input type="text" name="phonenum" id="phonenum2" class="request-form-input" placeholder="Номер телефона">
+                </div>
+                <div class="col-lg-3">
+                    <div class="slidecontainer">
+                        <p>Выбранный бюджет: <span id="demo"></span><span id="rub"> р.</span></p>
+                        <input type="range" min="1500" max="200000" value="34000" class="slider" id="myRange">
+                        <div class="col-lg-6 text-left no-padding">1500</div><div class="col-lg-6 text-right no-padding">200 000 +</div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="calendar-container">
+                        <p>Дата получения:</p>
+                        <div class="calendar">12 \ 10 \ 19 <img src="img/calendar.png"></div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="calendar-container">
+                        <p>Дата возврата:</p>
+                        <div class="calendar">15 \ 12 \ 19 <img src="img/calendar.png"></div>
+                        <p class="selected">Выбрано: <br><span>35 дн.</span></p>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <label for="accept1" class="accept"><input type="checkbox" name="accept" id="accept2">
+                        Я согласен на обработку персональных данных</label>
+                    <button type="button" class="btn send-request">Оставить заявку</button>
+                </div>
+                <div class="col-lg-1">
+                    <button class="btn-close"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header-fixed">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-right">
+                    <div class="logo-min"></div>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 text-right">
+                    <nav class="nav">
+                        <ul class="mainMenu">
+                            <li><a href="#">Каталог машин</a></li>
+                            <li><a href="#">Услуги</a>
+                                <ul class="mainSubmenu text-left">
+                                    <li><a href="#">Долгосрочная аренда</a></li>
+                                    <li><a href="#">Автомобили на свадьбу</a></li>
+                                    <li><a href="#">Аренда авто с водителем</a></li>
+                                    <li><a href="#">Гринкарта</a></li>
+                                    <li><a href="#">Трансфер</a></li>
+                                    <li><a href="#">Дополнительные услуги</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <button class="btn quick-pick">Быстрый подбор</button>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <a href="#smallModal" class="call" data-toggle="modal"></a>
+                    <div class="dropdown d-min">
+                        <div class="select">
+                            <span>ENG</span>
+                            <i class="fa fa-chevron-left"></i>
+                        </div>
+                        <input type="hidden" name="lang">
+                        <ul class="dropdown-menu">
+                            <li id="lang1a">ENG</li>
+                            <li id="lang2a">RU</li>
+                            <li id="lang3a">中文</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="catalog-slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-2 col-xs-2">
+                    <div class="owl-one owl-carousel owl-theme">
+                        <div> <div class="car-slide"><img class="img_fit" src="img/bmw.png" alt=""><h3>Арендуй BMW 3 2019 прямо сейчас</h3></div> </div>
+                        <div> <div class="car-slide"><img class="img_fit" src="img/bmw2.png" alt=""><h3>Арендуй BMW 3 2019 прямо сейчас</h3></div> </div>
+                        <div> <div class="car-slide"><img class="img_fit" src="img/bmw.png" alt=""><h3>Арендуй BMW 3 2019 прямо сейчас</h3></div> </div>
+                        <div> <div class="car-slide"><img class="img_fit" src="img/bmw2.png" alt=""><h3>Арендуй BMW 3 2019 прямо сейчас</h3></div> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                    <button class="btn to-catalog">Перейти в каталог</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                    <h2>Компания "Карсайд"</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                    <p>Предоставляем авто в аренду без водителя.</p>
+                    <p>Сдаем машины для поездок по Санкт-Петербургу, области и России. В прокат сдаются авто 2016-2019
+                        года выпуска.</p>
+                    <p>Автомобили имеют комплектацию выше минимальной. Напрокат предлагаются легковые иномарки бизнес
+                        и эконом классов.</p>
+                    <p>В парке есть марки <a href="#">Рено,</a> <a href="#">Шкода,</a> <a href="#">Ниссан,</a>
+                        <a href="#">Фольксваген,</a> <a href="#">Мерседес,</a> <a href="#">Бмв</a> <span> и др.</span></p>
+                    <p>Осуществляем бесплатную подачу в аэропорт и на Московский вокзал.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                    <h4>Как взять автомобиль в прокат? <br><span>Легко!</span></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                    <button class="btn watch-video">Смотреть ролик</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="advantages">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-5 col-sm-5 col-xs-12">
+                    <h2>Наши преимущества</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-lg-offset-1 col-md-2 col-sm-2 col-xs-12">
+                    <div class="advantage">
+                        <img src="img/adv1.png" alt="">
+                        <p><b>Прозрачные условия</b></p>
+                        <p>Наши преимущества направлены на упрощение процедур для новичков</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                    <div class="advantage">
+                        <img src="img/adv2.png" alt="">
+                        <p><b>Машина чистая, не нужно мыть при сдаче</b></p>
+                        <p>Не мойте, можете даже в грязных сандалиях садиться</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                    <div class="advantage">
+                        <img src="img/adv3.png" alt="">
+                        <p><b>Новый автопарк</b></p>
+                        <p>Машины новые, что обязательно вас порадует</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                    <div class="advantage">
+                        <img src="img/adv4.png" alt="">
+                        <p><b>Можно ездить по Европе</b></p>
+                        <p>Проезжайте сотни км и смотрите города, но лучше в нашу глубинку</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                    <div class="advantage">
+                        <img src="img/adv5.png" alt="">
+                        <p><b>Есть каско и осаго</b></p>
+                        <p>Вас стукнули в бок? Не беда. Ударьте в ответ!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 col-lg-offset-1">
+                    <div class="advantage">
+                        <img src="img/adv6.png" alt="">
+                        <p><b>Машины в собственности</b></p>
+                        <p>Хотите купить? Звоните, но лучше просто ездите</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                    <div class="advantage">
+                        <img src="img/adv7.png" alt="">
+                        <p><b>Без посредников</b></p>
+                        <p>Вы не переплачиваете риэлтору или дилеру</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                    <div class="advantage">
+                        <img src="img/adv8.png" alt="">
+                        <p><b>Пункутальность менеджеров</b></p>
+                        <p>Не успете багаж получить, а он уже на месте</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                    <div class="advantage">
+                        <img src="img/adv9.png" alt="">
+                        <p><b>Свежая резина</b></p>
+                        <p>Свежая, очень вкусная и безопасная</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                    <div class="advantage">
+                        <img src="img/adv10.png" alt="">
+                        <p><b>Комплектация выше минимальной</b></p>
+                        <p>Можете похвастать перед друзьями</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="how">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h2>Как взять автомобиль в прокат?</h2>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <h4>Всего 4 простых шага:</h4>
+                    <ol>
+                        <li><span>1</span><a href="#">Оформляете заявку на сайте</a> через онлайн-консультанта или по телефону</li>
+                        <li><div class="arrow"></div> </li>
+                        <li><span>2</span>Согласовываете дату и время аренды с менеджером</li>
+                        <li><div class="arrow"></div> </li>
+                        <li><span>3</span>Забираете авто у любой станции метро или в пункте проката</li>
+                        <li><div class="arrow"></div> </li>
+                        <li><span>4</span>Подписываете договор, вносите залог, оплачиваете стоимость аренды авто</li>
+                    </ol>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="car-top"></div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <h4 class="text-right">Требоания к водителю:</h4>
+                    <ul>
+                        <li>Водительское удостоверение <img src="img/driver.png" alt=""></li>
+                        <li>Паспорт <img src="img/passport.png" alt=""></li>
+                        <li>Возраст от 22-х лет <img src="img/age.png" alt=""></li>
+                        <li>Стаж вождения более 2-ух лет <img src="img/rul.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                    <button class="btn formal">Оформить заявку</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="catalog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h2>Каталог автомобилей</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="catalog-nav">
+                        <ul>
+                            <li><a href="#">Эконом-класс</a></li>
+                            <li class="active"><a href="#">Комфорт-класс</a></li>
+                            <li><a href="#">Бизнес класс</a></li>
+                            <li><a href="#">Внедорожники</a></li>
+                            <li><a href="#">Микроавтобусы</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="catalog-card">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="card-header"><img src="img/bmw-logo.png">BMW 3-серии 2019 г.</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="card-sale"><p>Новинка</p></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="card-pic"><img src="img/car1.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="card-params">Седан 1,6 л. / 136 л.с. АКПП Бензин</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <div class="card-non">от 2 000 р/сутки</div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <div class="card-price">от 1 700 р/сутки</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+                                    <button class="btn more">Подробнее</button>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+                                    <button class="btn quick-order">Быстрый заказ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="catalog-card">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="card-header"><img src="img/audi-logo.png">AUDI A4 B9</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="card-sale"><p>- 20%</p></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="card-pic"><img src="img/car2.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="card-params">Седан 1,6 л. / 136 л.с. АКПП Бензин</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="card-non">от 1 600 р/сутки</div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="card-price">от 1 600 р/сутки</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center">
+                                    <button class="btn more">Подробнее</button>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-sm-6 col-xs-12 text-center">
+                                    <button class="btn quick-order-yl">Быстрый заказ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="catalog-card">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="card-header"><img src="img/mers-logo.png">MERCEDES-BENZ E W213</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="card-sale"><p>Новинка</p></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="card-pic"><img src="img/car3.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="card-params">Седан 1,6 л. / 136 л.с. АКПП Бензин</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <div class="card-non">от 2 000 р/сутки</div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <div class="card-price">от 1 800 р/сутки</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+                                    <button class="btn more">Подробнее</button>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+                                    <button class="btn quick-order">Быстрый заказ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="reviews">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h2>Отзывы клиентов</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="review-slider">
+                        <div class="owl-two owl-carousel owl-theme">
+                            <div> <div class="review">
+                                <b>Андрей Шпрякин</b><br>
+                                <span>13.09.2019</span><br>
+                                <img src="img/reviewer2.png" alt="">
+                                <p>
+                                    Ребята, спасибо... Вы единственная Компания, которая согласилась 01 января сдать
+                                    нам машину в аренду... Все остальные - кому мы звонили - согласны были сдать только с
+                                    03 января, либо заламывали конкретную цену... Машина была 2016 года (VW Polo), проехали
+                                    на ней 1500 км (тур был в Карелию), все ок... ни разу не подвела... Мы опасались, что
+                                    при сдаче машины 06 января...
+                                </p>
+                            </div> </div>
+                            <div> <div class="review">
+                                <b>Жанна Капибарова-Мухинская</b><br>
+                                <span>20.08.2019</span><br>
+                                <img class="img_fit" src="img/reviewer1.png" alt="">
+                                <p>
+                                    Очень приятная компания по прокату автомобилей!! Удачное расположение. Рядом 2 станции
+                                    метро различных веток. Московский вокзал не далеко. Выбранная мной машина была готова в
+                                    срок и идеально чистой!! При возврате мыть машину было не нужно!!! В других прокатах и
+                                    даже именитых, у меня это требовали или выставляли дополнительную оплату. Сотрудники
+                                    постоянно мониторят...
+                                </p>
+                            </div> </div>
+                            <div> <div class="review">
+                                <b>Ксавьер Робертович</b><br>
+                                <span>19.08.2019</span><br>
+                                <img class="img_fit" src="img/reviewer3.png" alt="">
+                                <p>
+                                    На белые ночи ездили всей семьей в Питер. На три дня арендовали автомобиль SKODA RAPID,
+                                    заказали через сайт компании. Очень удобно - прямо к Московскому вокзалу пригнали
+                                    автомобиль. Машина новенькая, ухоженная. Сервис понравился, очень удобно.
+                                </p>
+                            </div> </div>
+                            <div> <div class="review">
+                                <b>Sichuanskiy-Cosmos</b><br>
+                                <span>16.09.2019</span><br>
+                                <img class="img_fit" src="img/reviewer4.png" alt="">
+                                <p>
+                                    Я всегда говорила и буду говорить, что в любом бизнесе кадры решают все.
+                                    Здесь - удивительно клиентоориентированный сервис и сотрудники, которые делают свое
+                                    дело очень хорошо. Я уже второй раз брала у них БМВ троечку и оба раза довольна
+                                    сервисом на пять с плюсом - всегда чистый авто, все вовремя, оформление быстрое,
+                                    помогут, расскажут, в любое время им...
+                                </p>
+                            </div> </div>
+                            <div> <div class="review">
+                                <b>Жанна Капибарова</b><br>
+                                <span>16.09.2019</span><br>
+                                <img class="img_fit" src="img/reviewer4.png" alt="">
+                                <p>
+                                    Очень приятная компания по прокату автомобилей!! Удачное расположение. Рядом 2 станции
+                                    метро различных веток. Московский вокзал не далеко. Выбранная мной машина была готова в
+                                    срок и идеально чистой!! При возврате мыть машину было не нужно!!! В других прокатах и
+                                    даже именитых, у меня это требовали или выставляли дополнительную оплату. Сотрудники
+                                    постоянно мониторят...
+                                </p>
+                            </div> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="request">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h2>Оставьте заявку для обратной связи</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="request-form">
+                    <p>Укажите свои данные и мы свяжемся с вами</p>
+                    <form class="form">
+                        <input type="text" name="name" id="name" class="request-form-input" placeholder="Имя">
+                        <input type="text" name="phonenum" id="phonenum" class="request-form-input" placeholder="Номер телефона">
+                        <label for="accept" class="accept"><input type="checkbox" name="accept" id="accept">
+                            Я согласен на обработку персональных данных</label>
+                        <button type="submit" class="btn send-request">Оставить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="news">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h2>Новости</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="news-card">
+                        <span>13.09.2019</span>
+                        <h4>Пополнение автопарка - BMW3 G20</h4>
+                        <img class="img_fit" src="img/news1.png" alt="">
+                        <p>Наш автопарк пополнился немецким премиальным седаном седьмого поколения BMW 3 G20.
+                            Автомобиль отличается жестким кузовом, современной электроникой, надежной тормозной
+                            системой M Sport.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="news-card">
+                        <span>12.09.2019</span>
+                        <h4>Шкода кодиак - новинка автопарка</h4>
+                        <img class="img_fit" src="img/news2.png" alt="">
+                        <p>У нас еще одно новое авто! Полноприводный внедорожник Шкода Кодиак покоряет безопасностью,
+                            надежностью и техническим оснащением. Не зря он признан лучшим семейным автомобилем по
+                            версии журнала Top Gear.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                    <a href="#" class="all-news">Все новости</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                    <div class="logo"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="contacts">
+                        <h4>Контакты</h4>
+                        <div class="messengers">
+                            <a href="#" class="tg"></a>
+                            <a href="#" class="wa"></a>
+                            <a href="#" class="vb"></a>
+                        </div>
+                        <div class="phonenum">+7 (812) 312-79-96 <br><span>Городской номер</span></div>
+                        <div class="phonenum">+7 (921) 391-21-21 <br><span>Ежедневно с 9:00-22:00</span></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="sections">
+                        <h4>Разделы сайта</h4>
+                        <nav class="footer-nav">
+                            <ul>
+                                <li><a href="#">Каталог машин</a></li>
+                                <li><a href="#">Услуги</a>
+                                    <ul>
+                                        <li><a href="#">Долгосрочная аренда</a></li>
+                                        <li><a href="#">Атвомобили на свадьбу</a></li>
+                                        <li><a href="#">Аренда авто с водителем</a></li>
+                                        <li><a href="#">Гринкарта</a></li>
+                                        <li><a href="#">Трансфер</a></li>
+                                        <li><a href="#">Дополнительные услуги</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="footer-news">
+                        <h4>Новости</h4>
+                        <a href="#">Пополнение автопарка - BMW 3 G20</a>
+                        <a href="#">Шкода кодиак - новинка автопарка</a>
+                        <a href="#">Теперь у нас BMW S201 в кузове G30 ...</a>
+                        <a href="#">Снижение цены на немецкий седан ...</a>
+                        <a href="#">Скидка 15% на volkswagen polo до ...</a>
+                        <a href="#">Отменена обязательная мойка машины</a>
+                        <a href="#">Новый автомобиль в парке - БМВ ...</a>
+                        <a href="#">С 1 июля компания "Carside" переходит ...</a>
+                        <a href="#">БМВ 5 2016 года - мировой бестселлер ...</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="we-in-instagram">
+                        <h4>Мы в инстаграме:</h4>
+                        <a href="#"><img width="90" height="90" src="img/insta1.png" alt=""></a>
+                        <a href="#"><img width="90" height="90" src="img/insta2.png" alt=""></a>
+                        <a href="#"><img width="90" height="90" src="img/insta3.png" alt=""></a>
+                        <a href="#"><img width="90" height="90" src="img/insta4.png" alt=""></a>
+                        <a href="#"><img width="90" height="90" src="img/insta5.png" alt=""></a>
+                        <a href="#"><img width="90" height="90" src="img/insta6.png" alt=""></a>
+                        <a href="#"><img width="90" height="90" src="img/insta7.png" alt=""></a>
+                        <a href="#"><img width="90" height="90" src="img/insta8.png" alt=""></a>
+                        <a href="#"><img width="90" height="90" src="img/insta9.png" alt=""></a>
+                        <div class="row text-center">
+                            <button class="btn to-acc">Перейти в аккаунт</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="social">
+                        <a href="#" class="fb"></a>
+                        <a href="#" class="inst"></a>
+                        <a href="#" class="vk"></a>
+                        <a href="#" class="yt"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="credits">© 2019 Карсайд Прокат Авто</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="banks">
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<div id="smallModal" class="modal fade">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Укажите свои данные и мы свяжемся с вами</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form">
+                    <input type="text" name="name" id="name1" class="request-form-input" placeholder="Имя">
+                    <input type="text" name="phonenum" id="phonenum1" class="request-form-input" placeholder="Номер телефона">
+                    <label for="accept1" class="accept"><input type="checkbox" name="accept" id="accept1">
+                        Я согласен на обработку персональных данных</label>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="row text-center">
+                    <button type="button" class="btn send-request center-block">Оставить заявку</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/scroll.js"></script>
+<script src="js/burgerMenu.js"></script>
+<script src="js/dropdown.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/owl.settings.js"></script>
+<script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function() {
+        output.innerHTML = this.value;
+    }
+</script>
+
+</body>
+</html>
