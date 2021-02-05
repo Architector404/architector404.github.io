@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "AvenirNextCyr Medium";
+    src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Medium.ttf");
+}
+@font-face {
+    font-family: "AvenirNextCyr MediumItalic";
+    src: url("../fonts/AvenirNextCyr/AvenirNextCyr-MediumItalic.ttf");
+}
+@font-face {
+    font-family: "AvenirNextCyr Regular";
+    src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.ttf");
+}
+@font-face {
+    font-family: "AvenirNextCyr Demi";
+    src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Demi.ttf");
+}
+
+@font-face {
+    font-family: "Merriweather Regular";
+    src: url("../fonts/Merriweather/Merriweather-Regular.ttf");
+}

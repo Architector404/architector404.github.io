@@ -1,0 +1,38 @@
+.img_fit
+{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.red
+{
+    color: #DF1C24;
+}
+.gray
+{
+    color: #C4C4C4;
+}
+
+.column
+{
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+.column a, h4
+{
+    display: block;
+    margin-bottom: 15px;
+}
+.column img
+{
+    display: block;
+}
+
+.margined
+{
+    padding-top: 60px;
+}

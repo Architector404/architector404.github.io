@@ -1,0 +1,515 @@
+@media  (min-width: 1490px) {
+    .container
+    {
+        width: 100%;
+        max-width: 1460px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .column
+    {
+        width: 321px;
+        margin-right: 40px;
+    }
+
+    .header .search
+    {
+        margin-left: 75%;
+    }
+    .in-article .search
+    {
+        margin-left: 60%;
+    }
+
+    .about .logo
+    {
+        width: 36%;
+    }
+
+    .block-head
+    {
+        width: 59%;
+    }
+
+    .article
+    {
+        width: 57%;
+    }
+
+    .add-comment form input
+    {
+        padding: 15px 100px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px)
+{
+    .container
+    {
+        width: 100%;
+        max-width: 962px;
+        position: relative;
+        margin: 0 auto;
+    }
+    .header .search
+    {
+        margin-left: 60%;
+        vertical-align: bottom;
+    }
+    .in-article .search
+    {
+        margin-left: 45%;
+        vertical-align: bottom;
+    }
+    .block-head
+    {
+        width: 100%;
+    }
+    .block-body
+    {
+        width: 100%;
+    }
+
+    .in-article
+    {
+        padding-bottom: 15px;
+    }
+    .article
+    {
+        width: 100%;
+    }
+    .prev-next .prev, .prev-next .next
+    {
+        display: inline-block;
+        width: 34%;
+        font-size: 12px;
+    }
+    .prev-next .ctrl
+    {
+        display: none;
+    }
+
+    .add-comment form input
+    {
+        width: 50%;
+    }
+    .add-comment form span
+    {
+        display: none;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px)
+{
+    .container
+    {
+        width: 100%;
+        max-width: 738px;
+        position: relative;
+        margin: 0 auto;
+    }
+    .column
+    {
+        width: 44%;
+    }
+
+    .header .nav
+    {
+        margin-top: 15px;
+    }
+    .header .search
+    {
+        margin-left: 50%;
+        vertical-align: bottom;
+    }
+    .in-article .search
+    {
+        margin-left: 28%;
+        vertical-align: bottom;
+    }
+    .about .about-txt
+    {
+        width: 100%;
+        margin-top: 1000px;
+    }
+    .about .logo
+    {
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .block-head
+    {
+        width: 100%;
+    }
+    .block-body
+    {
+        width: 100%;
+    }
+    .social .column
+    {
+        margin-top: 0;
+    }
+
+    .in-article
+    {
+        padding-bottom: 15px;
+    }
+    .article
+    {
+        width: 100%;
+    }
+    .prev-next .prev, .prev-next .next
+    {
+        display: inline-block;
+        width: 34%;
+        font-size: 12px;
+    }
+    .prev-next .ctrl
+    {
+        display: none;
+    }
+    .prev-next span
+    {
+        vertical-align: top;
+    }
+
+    .add-comment form
+    {
+        width: 100%;
+    }
+    .add-comment form input
+    {
+        width: 50%;
+    }
+    .add-comment form span
+    {
+        display: none;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px)
+{
+    h1
+    {
+        font-size: 36px;
+        line-height: 45px;
+    }
+    h2
+    {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    h3
+    {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    h4
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    h5
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    p, a
+    {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .container
+    {
+        width: 100%;
+        max-width: 560px;
+        position: relative;
+        margin: 0 auto;
+    }
+    .column
+    {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .header .nav
+    {
+        margin-top: 0;
+        border-bottom: none;
+    }
+    .header .title
+    {
+        display: none;
+    }
+    .header .nav .menu-burger
+    {
+        display: inline-block;
+    }
+    .header .nav ul li
+    {
+        display: none;
+    }
+    .header .search
+    {
+        width: 16px;
+        height: 16px;
+        margin-left: 75%;
+        padding-top: 35px;
+        vertical-align: top;
+    }
+
+    .about .about-txt
+    {
+        width: 100%;
+        margin-top: 750px;
+    }
+    .about .logo
+    {
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .redslash
+    {
+        display: none;
+    }
+    .block-head h2 span
+    {
+        display: inline;
+    }
+    .block-head
+    {
+        width: 100%;
+    }
+    .block-body
+    {
+        width: 100%;
+    }
+    .social .column
+    {
+        margin-top: 0;
+    }
+    .social .column > a
+    {
+        display: none;
+    }
+
+    .margined
+    {
+        padding-top: 0;
+    }
+
+    .in-article
+    {
+        padding-bottom: 15px;
+    }
+    .article
+    {
+        width: 100%;
+    }
+    .article h1
+    {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .article .tags
+    {
+        margin-left: 0;
+    }
+    .prev-next .prev, .prev-next .next
+    {
+        display: inline-block;
+        width: 34%;
+        font-size: 12px;
+    }
+    .prev-next .ctrl
+    {
+        display: none;
+    }
+    .prev-next span
+    {
+        vertical-align: top;
+    }
+
+    .add-comment form
+    {
+        width: 100%;
+    }
+    .add-comment form input
+    {
+        width: 100%;
+    }
+    .add-comment form span
+    {
+        display: none;
+    }
+
+    .footer p span
+    {
+        display: none;
+    }
+}
+@media screen and (max-width: 575px)
+{
+    h1
+    {
+        font-size: 36px;
+        line-height: 45px;
+    }
+    h2
+    {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    h3
+    {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    h4
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    h5
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    p, a
+    {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .container
+    {
+        width: 100%;
+        max-width: 300px;
+        position: relative;
+        margin: 0 auto;
+    }
+    .column
+    {
+        width: 100%;
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .header .nav
+    {
+        margin-top: 0;
+        border-bottom: none;
+    }
+    .header .title
+    {
+        display: none;
+    }
+    .header .nav .menu-burger
+    {
+        display: inline-block;
+    }
+    .header .nav ul li
+    {
+        display: none;
+    }
+    .header .search
+    {
+        width: 16px;
+        height: 16px;
+        margin-left: 60%;
+        padding-top: 35px;
+        vertical-align: top;
+    }
+
+    .about .about-txt
+    {
+        width: 100%;
+        margin-top: 400px;
+    }
+    .about .logo
+    {
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .redslash
+    {
+        display: none;
+    }
+    .block-head h2 span
+    {
+        display: inline;
+    }
+    .block-head
+    {
+        width: 100%;
+    }
+    .block-body
+    {
+        width: 100%;
+    }
+    .social .column
+    {
+        margin-top: 0;
+    }
+    .social .column > a
+    {
+        display: none;
+    }
+
+    .margined
+    {
+        padding-top: 0;
+    }
+
+    .in-article
+    {
+        padding-bottom: 15px;
+    }
+    .article
+    {
+        width: 100%;
+    }
+    .article h1
+    {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .article .tags
+    {
+        margin-left: 0;
+    }
+    .prev-next .prev, .prev-next .next
+    {
+        display: inline-block;
+        width: 34%;
+        font-size: 12px;
+    }
+    .prev-next .ctrl
+    {
+        display: none;
+    }
+    .prev-next span
+    {
+        vertical-align: top;
+    }
+
+    .add-comment form
+    {
+        width: 100%;
+    }
+    .add-comment form input
+    {
+        width: 80%;
+    }
+    .add-comment form span
+    {
+        display: none;
+    }
+
+    .footer p span
+    {
+        display: none;
+    }
+}
