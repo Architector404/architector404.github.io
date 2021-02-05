@@ -1,0 +1,25 @@
+.owl-next, .owl-prev
+{
+    width: 42px;
+    height: 42px;
+    font-weight: bold !important;
+    border: 2px solid rgba(255, 24, 52, .5)!important;
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    border-radius: 50% !important;
+}
+.owl-theme .owl-nav [class*='owl-']:hover
+{
+    background: none;
+}
+.owl-prev, .owl-next {
+    position: absolute;
+    top: 40%;
+    margin-top: -10px;
+}
+.owl-prev {
+    left: 5px;
+}
+.owl-next {
+    right: 5px;
+}

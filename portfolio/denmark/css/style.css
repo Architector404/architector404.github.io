@@ -1,0 +1,813 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body
+{
+    width: 100%;
+    font-family: "Roboto Regular";
+}
+header, section, nav, aside, footer
+{
+    display: block;
+}
+textarea
+{
+    width: 100%;
+    resize: vertical;
+}
+ul
+{
+    margin-bottom: 0;
+}
+h1
+{
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.wrapper
+{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header
+{
+    background: #034d91;
+    color: #fff;
+}
+.header-fixed
+{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.promo
+{
+    background: url("../img/promo.jpg") no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.logo
+{
+    width: 150px;
+    height: 100px;
+    display: inline-block;
+    margin: 20px 0;
+    background: url("../img/logo.png") no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+}
+.description
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px 0;
+    font-size: 1.0em;
+}
+.description span
+{
+    text-transform: uppercase;
+}
+.contactEmail
+{
+    margin-top: 40px;
+    font-family: "Oswald Regular";
+    font-size: 1.0em;
+}
+
+.nav
+{
+    margin-top: 100px;
+}
+.mainMenu > li
+{
+    display: inline-block;
+    position: relative;
+    white-space: nowrap; /*Запрет переноса*/
+    margin-right: -4px; /*Фикс отсупов инлайн-блоков*/
+}
+.mainMenu li a
+{
+    display: block;
+    margin-left: -1px; /*чтобы боковые линии слились воедино*/
+    padding: 5px 15px; /*def*/
+    color: #ffffff; /*def*/
+    font-family: "Roboto Medium";
+    font-size: 1.1em; /*def*/
+    border: none;
+}
+.mainSubmenu li a
+{
+    margin-bottom: -1px; /*чтобы нижние линии слились воедино*/
+    /*border: 1px solid #e5e5e5;*/
+}
+.mainMenu li a img
+{
+    margin-right: 5px;
+}
+.mainMenu li a:hover
+{
+    text-decoration: none;
+    color: #fff; /*def*/
+    /*background-color: #81a6c8;*/ /*def*/
+    border-bottom: 1px solid #fff;
+}
+.mainMenu .active > a
+{
+    color: #fff; /*def*/
+    background-color: #81a6c8; /*def*/
+}
+.mainMenu .active > a:hover
+{
+    color: #fff; /*def*/
+    background-color: #81a6c8; /*def*/
+}
+.btnBurger
+{
+    display: none; /*def*/
+    cursor: pointer;
+}
+.btnBurger i
+{
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin: 4px auto;
+    background: #ffffff; /*def*/
+}
+
+.btnSign
+{
+    font-family: "Roboto Medium";
+    font-size: 1.1em; /*def*/
+    margin: 40px 0;
+}
+.btnSign .userIco
+{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: bottom;
+    background: url("../img/user.png") no-repeat;
+}
+.btnSign a
+{
+    display: inline-block;
+    border: none;
+}
+.btnSearch
+{
+    display: none;
+    margin-right: 15px;
+    background: #81a6c8;
+    cursor: pointer;
+}
+.btnSearch i
+{
+    display: block;
+    width: 28px;
+    height: 28px;
+    background: url("../img/search.png") no-repeat 50% 50%;
+}
+
+.promo h2
+{
+    margin: 60px 18%;
+    font-family: "Roboto Regular";
+}
+.promo h2 span
+{
+    font-family: "Roboto Bold";
+}
+.promo h4
+{
+    font-family: "Roboto Medium";
+    margin-bottom: 180px;
+}
+.forumBanner
+{
+    margin-bottom: 50px;
+    padding: 40px 50px;
+    background: #e01835;
+}
+.forumBanner h4
+{
+    line-height: 1.4;
+}
+.forumBanner h4, .forumBanner p
+{
+    margin-bottom: 40px;
+}
+.btnConnect
+{
+    color: #e01835;
+    background: #fff;
+}
+
+.commercialSlider
+{
+    margin: 60px 0;
+}
+.commercialBannerBig
+{
+
+}
+
+.content
+{
+
+}
+.tag
+{
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.commercialRight
+{
+
+}
+.commercialBannerSmall
+{
+    height: 100%;
+    margin-bottom: 30px;
+}
+.commercialRight a
+{
+    color: #e01835;
+}
+
+.news
+{
+
+}
+.newsBlock
+{
+    margin-bottom: 30px;
+}
+.newsPhoto
+{
+    height: 250px;
+    margin-bottom: 10px;
+}
+.viewMore
+{
+    color: #e01835;
+}
+
+.catalog
+{
+
+}
+
+.newsPartners
+{
+
+}
+.newsPartners a
+{
+    color: #e01835;
+}
+
+.about
+{
+}
+.question
+{
+    border: none;
+    border: 1px solid #e01835;
+}
+.input
+{
+    margin-top: 30px;
+    margin-right: 15px;
+    border: none;
+    border-bottom: 1px solid #e01835;
+}
+textarea, input,
+input::-webkit-input-placeholder {
+    font-size: 20px;
+    /*line-height: 3;*/
+}
+input[type="text"], input[type="email"], textarea, select
+{
+    outline: none;
+}
+/* Customize the label (the container) */
+.accept {
+    display: block;
+    position: relative;
+    padding: 15px 0;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* Hide the browser's default checkbox */
+.accept input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+/* Create a custom checkbox */
+.accept .checkmark {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 1px solid #9d9d9d;
+}
+/* On mouse-over, add a grey background color */
+.accept:hover input ~ .checkmark {
+}
+/* When the checkbox is checked, add a blue background */
+.accept input:checked ~ .checkmark {
+    background-color: #fff;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Show the checkmark when checked */
+.accept input:checked ~ .checkmark:after {
+    display: block;
+}
+/* Style the checkmark/indicator */
+.accept .checkmark:after {
+    left: 4px;
+    top: 0px;
+    width: 10px;
+    height: 15px;
+    border: solid #e01835;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.accept a
+{
+    color: #bbbbbb;
+    border-bottom: 1px solid #bbbbbb;
+}
+.btnSend
+{
+    display: inline-block;
+    margin-top: -150px;
+    margin-left: 70%;
+    color: #ffffff;
+    background: #e01835;
+}
+
+.catalogBanner
+{
+    padding: 4% 5%;
+    color: #fff;
+    background: #a9a9a9;
+}
+.catalogBanner p
+{
+    display: inline-block;
+    margin-bottom: 50px;
+}
+.btnAddService
+{
+    margin: 100px 0;
+    padding: 20px 25px;
+    background: #e01835;
+}
+.libraryBanner
+{
+    margin-bottom: 80px;
+    padding: 4% 5%;
+    color: #fff;
+    background: url("../img/library.jpg") no-repeat;
+    background-size: cover;
+}
+.libraryBanner h2
+{
+    margin-bottom: 50px;
+}
+.libraryBanner p
+{
+    margin-bottom: 40px;
+}
+.libraryBanner .sign
+{
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 5px;
+    border: none;
+}
+.aboutBanner
+{
+    margin-bottom: 80px;
+    padding: 30px 15px 200px;
+    color: #fff;
+    background: url("../img/pandora.jpg") no-repeat;
+    background-size: cover;
+}
+
+.social
+{
+    display: inline-block;
+    margin-bottom: 50px;
+}
+.social a
+{
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+.social a:hover
+{
+    text-decoration: none;
+    border: 2px solid #e01835;
+}
+.insta
+{
+    background: url("../img/insta.png") no-repeat 50% 50%;
+    background-size: 75%;
+}
+.youtube
+{
+    background: url("../img/youtube.png") no-repeat 50% 50%;
+    background-size: 75%;
+}
+.in
+{
+    background: url("../img/in.png") no-repeat 50% 50%;
+    background-size: 75%;
+}
+.fb
+{
+    background: url("../img/fb.png") no-repeat 50% 50%;
+    background-size: 75%;
+}
+
+.infoSlide
+{
+    min-height: 380px;
+}
+.advCard, .infoSlide
+{
+    margin-bottom: 35px;
+    padding: 30px 15px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+}
+.faq
+{
+    margin-bottom: 60px;
+}
+/* скрываем чекбоксы и блоки с содержанием */
+.hide, .hide + label ~ div {
+    display: none;
+}
+/* вид текста label */
+.hide + label,
+.hide:checked + label {
+    width: 100%;
+    padding: 25px 30px;
+    cursor: pointer;
+    background: #fcfcfc;
+    border-left: 2px solid #e01835;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+/* вид текста label при активном переключателе */
+.hide:checked + label {
+
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked + label + div {
+    display: block;
+    background: #fff;
+    padding: 25px 30px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+.hide + label:after {
+    background-color: #fff;
+    color: #000;
+    content: "˅";
+    display: block;
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+    height: 26px;
+    line-height: 26px;
+    margin: 3px 5px;
+    text-align: center;
+    width: 26px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.hide:checked + label:after {
+    content: "˄";
+    background-color: #e01835;
+    color: #fff;
+}
+.faq h4
+{
+    margin: 30px 0;
+}
+.faq .video
+{
+    width: 100%;
+    height: 480px;
+    background: #035d8d;
+}
+
+.footer
+{
+    color: #ffffff;
+    background: url("../img/footer.jpg");
+}
+.footer .logo
+{
+    display: block;
+}
+.footer .description
+{
+    display: block;
+    margin-bottom: 80px;
+}
+.footer .sitemap
+{
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.contactEmail .mailIco
+{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: bottom;
+    background: url("../img/mail.png") no-repeat 50% 50%;
+    background-size: contain;
+}
+.footer .social
+{
+    margin-top: 60px;
+}
+.footer .social a
+{
+    margin-right: 15px;
+}
+
+.navFooter
+{
+
+}
+.footerMenu
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 60px;
+}
+.footerMenu li a
+{
+    display: block;
+    padding: 5px 0; /*def*/
+    color: #ffffff; /*def*/
+    font-size: 14px; /*def*/
+    font-weight: 400;
+    border: none;
+}
+.footerMenu li a:hover
+{
+    color: #e01835;
+}
+
+a
+{
+    font-weight: 600;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+a:hover
+{
+    text-decoration: none;
+    color: #e01835;
+    border-bottom: 1px solid #e01835;
+}
+.news h3, .catalog h3, .newsPartners h3, .about h3, .content h3
+{
+    font-family: "Oswald Bold";
+    color: #e01835;
+}
+.img_fit
+{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.btn
+{
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: "Roboto Medium";
+}
+
+@media (min-width: 768px)
+{
+    .btnBurgerSubmenu
+    {
+        display: none;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .logo
+    {
+        width: 100px;
+        height: 75px;
+        margin: 10px 50px;
+    }
+    .description
+    {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .contactEmail
+    {
+        margin-top: 10px;
+    }
+    .nav
+    {
+        margin-top: 100px;
+    }
+    .userIco
+    {
+        margin: 0 15px;
+    }
+    .btn
+    {
+        padding: 10px 10px;
+        font-size: 14px;
+    }
+    .btnSend
+    {
+        display: inline-block;
+        margin-top: 0;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .footer .logo
+    {
+        margin: 10px 25px;
+    }
+    .footerMenu
+    {
+        margin: 10px;
+    }
+    .footer .social a
+    {
+        margin-right: 0;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .logo
+    {
+        width: 100px;
+        height: 75px;
+    }
+    .contactEmail
+    {
+        margin-top: 20px;
+    }
+    .nav
+    {
+        margin-top: 50px;
+    }
+    .userIco
+    {
+        margin: 0 15px;
+    }
+    .btn
+    {
+        padding: 10px 10px;
+    }
+    .footerMenu
+    {
+        margin: 30px;
+    }
+}
+@media (max-width: 767px) {
+    .header
+    {
+        text-align: center;
+    }
+    .logo
+    {
+        width: 100px;
+        height: 75px;
+        margin: 10px 35%;
+    }
+    .description
+    {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .contactEmail
+    {
+        margin-top: 10px;
+    }
+    .btnSign
+    {
+        text-align: center;
+    }
+    .nav
+    {
+        display: block;
+        margin: 0;
+    }
+    .mainMenu
+    {
+        text-align: left;
+    }
+    .mainMenu
+    {
+        display: none;
+    }
+    .mainMenu > li
+    {
+        display: block;
+        margin: 0;
+        margin-bottom: -1px;
+    }
+    .btnBurger
+    {
+        display: inline-block; /*def*/
+        cursor: pointer;
+    }
+    .mainSubmenu
+    {
+        padding: 5px 0;
+        padding-left: 30px;
+    }
+    .mainSubmenu li a
+    {
+        border: none;
+    }
+    .mainMenuShow
+    {
+        display: block;
+    }
+    .visible
+    {
+        display: inline;
+    }
+
+    .promo h2, .promo h2 span
+    {
+        font-size: 23px;
+        margin: 0;
+        margin: 60px 0;
+    }
+    .news
+    {
+        padding: 10px;
+    }
+    .btnSend
+    {
+        display: inline-block;
+        margin-top: 0;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .footerMenu
+    {
+        margin: 10px;
+    }
+    .footer .description
+    {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .footer .sitemap
+    {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
