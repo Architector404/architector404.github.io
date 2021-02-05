@@ -1,0 +1,448 @@
+@media (min-width: 1200px) and (max-width: 1440px)
+{
+    .hero-slide
+    {
+        padding: 0 5%;
+    }
+    .owl-hero .owl-prev, .owl-hero .owl-next
+    {
+        top: 78%;
+    }
+    .owl-hero .owl-prev {
+        left: 38%;
+    }
+    .owl-hero .owl-next {
+        right: 53%;
+    }
+    .hero-slide div
+    {
+        margin-top: 100px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px)
+{
+    .title
+    {
+        font-size: 16px;
+    }
+    .main-menu li a
+    {
+        padding: 0 10px;
+        font-size: 15px;
+    }
+
+    .hero-slide
+    {
+        padding: 20% 5%;
+    }
+    .hero-slide div
+    {
+        width: 60%;
+        padding-left: 50px;
+    }
+    .owl-carousel .owl-item img
+    {
+        width: 100%;
+    }
+    .owl-hero .owl-prev, .owl-hero .owl-next
+    {
+        top: 80%;
+    }
+    .owl-hero .owl-prev {
+        left: 77%;
+    }
+    .owl-hero .owl-next {
+        right: 10%;
+    }
+
+    .search-form .chose, .search-form .reset
+    {
+        padding: 16px 24px;
+    }
+    .search-form .form-input
+    {
+        padding: 16px 24px;
+    }
+    .search-form .chose
+    {
+        margin-right: 15px;
+    }
+    .dropdown .select {
+        padding: 5px;
+    }
+
+    .count-form .form-input
+    {
+        width: 100%;
+    }
+
+    .footer-nav ul
+    {
+        margin-left: 90px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px)
+{
+    .title
+    {
+        font-size: 14px;
+    }
+    .main-menu li a
+    {
+        padding: 0 6px;
+        font-size: 11px;
+    }
+
+    .hero-slide div
+    {
+        width: 90%;
+        padding-left: 50px;
+    }
+    .owl-carousel .owl-item img
+    {
+        width: 100%;
+    }
+    .owl-hero .owl-prev, .owl-hero .owl-next
+    {
+        top: 89%;
+    }
+    .owl-hero .owl-prev {
+        left: 72%;
+    }
+    .owl-hero .owl-next {
+        right: 10%;
+    }
+
+    .search-form .chose, .search-form .reset
+    {
+        padding: 10px 10px;
+    }
+    .search-form .form-input
+    {
+        padding: 10px 10px;
+    }
+    .search-form .chose
+    {
+        margin-right: 0;
+    }
+    .sort
+    {
+        font-size: 9px;
+    }
+    .dropdown .select {
+        padding: 5px;
+    }
+
+    #table-cost th
+    {
+        font-size: 18px;
+    }
+    #table-cost tr
+    {
+        font-size: 13px;
+    }
+    #table-cost tr:last-child
+    {
+        font-size: 16px;
+    }
+    #table-cost td, #table-cost th
+    {
+        padding: 16px 20px;
+    }
+    .save
+    {
+        left: 0;
+    }
+
+    .subscribe-form .form-input
+    {
+        width: 75%;
+    }
+}
+@media screen and (max-width: 767px)
+{
+    .btn
+    {
+        padding: 18px 39px;
+        font-size: 16px;
+    }
+
+    .nav-transform
+    {
+        position: fixed;
+        z-index: 10;
+        padding-bottom: 15px;
+        background: #fff;
+        box-shadow: 0px 8px 20px rgba(35, 37, 46, 0.4);
+    }
+    .nav-transform .title
+    {
+        display: none;
+    }
+    .title
+    {
+        margin-top: 21px;
+        margin-left: 15px;
+    }
+    .main-menu
+    {
+        display: none;
+        text-align: right;
+        float: none;
+        margin-top: 60px;
+        margin-right: 0;
+    }
+    .main-menu > li
+    {
+        display: block;
+        margin: 0;
+        margin-bottom: -1px;
+    }
+    .main-menu li a
+    {
+        padding: 10px 20px;
+        color: #8D8D8D;
+    }
+    .btn-burger
+    {
+        display: inline-block;
+        float: right;
+        margin-top: 21px;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+    .btn-burger i
+    {
+        display: block;
+        width: 20px;
+        height: 3px;
+        margin: 4px auto;
+        background: #fff;
+    }
+    .btn-burger i:nth-child(2)
+    {
+        width: 16px;
+        margin-left: 4px;
+    }
+    .nav-transform .btn-burger
+    {
+        transform: rotate(-90deg);
+    }
+    .nav-transform .btn-burger i
+    {
+        background: #23252E;
+    }
+    .nav-fixed .btn-burger i
+    {
+        background: #23252E;
+    }
+    .nav-fixed .main-menu li a
+    {
+        color: #8D8D8D;
+    }
+    .main-menu-show
+    {
+        display: block;
+    }
+
+    .hero-slide
+    {
+        padding: 13% 5%;
+    }
+    .hero-slide div
+    {
+        width: 100%;
+        padding-left: 18px;
+    }
+    .hero-slide div h2
+    {
+        font-size: 24px;
+    }
+    .hero-slide div h4
+    {
+        font-size: 18px;
+    }
+    .hero-slide .more-btn
+    {
+        margin-top: 52px;
+        margin-bottom: 20px;
+    }
+    .owl-carousel .owl-item img
+    {
+        width: 100%;
+    }
+    .owl-hero .owl-prev, .owl-hero .owl-next
+    {
+        top: 80%;
+    }
+    .owl-hero .owl-prev {
+        left: auto;
+        right: 72px;
+    }
+    .owl-hero .owl-next {
+        right: 10%;
+    }
+    .owl-next > img, .owl-prev > img
+    {
+        padding: 12px 7px;
+    }
+
+    .order h2, .count h2, .gallery h2, .about h2, .advantages h2, .partners h2, .subscribe h2
+    {
+        font-size: 22px;
+    }
+    .order p, .count p, .gallery p, .about p, .advantages p, .partners p, .subscribe p
+    {
+        font-size: 14px;
+    }
+    .search-form
+    {
+        padding-bottom: 30px;
+    }
+    .search-form .chose, .search-form .reset
+    {
+        padding: 19px 26px;
+    }
+    .search-form .form-input
+    {
+        padding: 19px 33px;
+        margin-bottom: 15px;
+    }
+    .search-form .chose
+    {
+        margin-right: 15px;
+    }
+    .sort
+    {
+        display: none;
+    }
+    .view-as-btns
+    {
+        display: block;
+        width: 100%;
+    }
+    .view-as
+    {
+        width: 13px;
+        height: 13px;
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+    .view-as-card
+    {
+        background: url("../img/icons/card.svg")no-repeat center center;
+        background-size: contain;
+    }
+    .view-as-table
+    {
+        background: url("../img/icons/table.svg")no-repeat center center;
+        background-size: contain;
+    }
+    #table-sm
+    {
+        font-size: 14px;
+    }
+    #table-sm td, #table-sm th
+    {
+        padding: 17px 15px;
+    }
+    .tile-ctrl
+    {
+        padding: 16px 12px;
+    }
+    .count-form .form-input
+    {
+        width: 100%;
+    }
+
+    #table-cost th
+    {
+        font-size: 18px;
+    }
+    #table-cost tr
+    {
+        font-size: 13px;
+    }
+    #table-cost tr:last-child
+    {
+        font-size: 16px;
+    }
+    #table-cost td, #table-cost th
+    {
+        padding: 16px 20px;
+    }
+    .save
+    {
+        left: 0;
+    }
+
+    .gallery .photo
+    {
+        padding-right: 16px;
+        padding-bottom: 16px;
+    }
+
+    .about .photo
+    {
+        display: none;
+    }
+    .h-img
+    {
+        display: inline-block;
+        width: 49%;
+        padding: 40px 0;
+    }
+
+    .advantage
+    {
+        width: 100%;
+        padding: 18px 15px;
+    }
+    .advantage .preview
+    {
+        background: url("../img/icons/info.svg")no-repeat top right;
+        background-color: #fff;
+    }
+    .advantage .description
+    {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        background: url("../img/icons/close.svg")no-repeat top right;
+        background-color: #fff;
+    }
+
+    .testimonial-slide
+    {
+        margin-top: 40px;
+    }
+    .owl-testimonial .owl-prev, .owl-testimonial .owl-next
+    {
+        bottom: -63px;
+    }
+    .owl-testimonial .owl-prev
+    {
+        right: 39px;
+    }
+
+    .subscribe-form .form-input
+    {
+        width: 80%;
+        padding: 16px 12px;
+    }
+
+    .contact-form #phone, .contact-form #email2
+    {
+        width: 100%;
+    }
+
+    .footer-nav ul
+    {
+        margin-top: 60px;
+        margin-left: 0;
+    }
+    .footer .confidencial
+    {
+        float: none;
+    }
+}

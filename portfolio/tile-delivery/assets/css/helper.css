@@ -1,0 +1,36 @@
+.img_fit
+{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.btn
+{
+    padding: 22px 44px;
+    font-size: 20px;
+    line-height: 18px;
+    color: #fff;
+    background: #370059;
+}
+.btn:hover
+{
+    color: #fff;
+}
+
+.disabled
+{
+    background: #CECECF;
+    border: 1px solid #CECECF;
+    cursor: auto;
+    pointer-events: none;
+}
+
+.disabled-b
+{
+    color: #CECECF;
+    background: none;
+    border: 1px solid #CECECF;
+    cursor: auto;
+    pointer-events: none;
+}

@@ -1,0 +1,70 @@
+/* Общие */
+.owl-next, .owl-prev
+{
+    font-weight: bold !important;
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+.owl-next > img, .owl-prev > img
+{
+    font-size: 30px;
+    color: white;
+    padding: 24px 19px;
+    border: 1px solid #fff;
+}
+.owl-prev > img
+{
+    background: rgba(196, 196, 196, 0.3);
+}
+.owl-next > img
+{
+    background: #370059;
+}
+.owl-theme .owl-nav
+{
+    margin-top: 0;
+}
+.owl-theme .owl-nav [class*='owl-']:hover
+{
+    background: none;
+}
+
+/* Hero-Slider */
+.owl-hero .owl-prev, .owl-hero .owl-next
+{
+    position: absolute;
+    top: 74%;
+}
+.owl-hero .owl-prev {
+    left: 40%;
+}
+.owl-hero .owl-next {
+    right: 53%;
+}
+.owl-hero
+{
+    touch-action: none;
+}
+.owl-carousel .owl-item img
+{
+    display: inline-block;
+    width: 60%;
+}
+.owl-hero .owl-item
+{
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
+}
+
+/* Testimonial-Slider */
+.owl-testimonial .owl-prev, .owl-testimonial .owl-next
+{
+    position: absolute;
+    bottom: -103px;
+}
+.owl-testimonial .owl-prev {
+    right: 63px;
+}
+.owl-testimonial .owl-next {
+    right: 0;
+}

@@ -1,0 +1,645 @@
+.wrapper
+{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header
+{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background: url("../img/backgrounds/background.jpg")no-repeat;
+    background-size: cover;
+}
+.content
+{
+    position: relative;
+    top: 100vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    background: #fff;
+}
+.title
+{
+    display: inline-block;
+    float: left;
+    margin-top: 31px;
+    margin-left: 35px;
+    font-size: 20px;
+    color: #fff;
+}
+.nav
+{
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+.nav-fixed
+{
+    width: 100%;
+    padding-bottom: 15px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background: #fff;
+    box-shadow: 0px 5px 10px rgba(17, 17, 17, 0.06);
+}
+.nav-fixed .title span
+{
+    color: #370059;
+}
+.nav-fixed .title
+{
+    color: #23252E;
+}
+.nav-fixed .main-menu li a
+{
+    color: #23252E;
+}
+.main-menu
+{
+    display: inline-block;
+    float: right;
+    margin-top: 31px;
+    margin-right: 35px;
+}
+.main-menu > li
+{
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    margin-right: -4px;
+}
+.main-menu li a
+{
+    display: block;
+    margin-left: -1px;
+    padding: 0 20px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+/*.main-menu li a:hover, .main-menu .active > a, .main-menu .active > a:hover
+{
+    color: #370059;
+}*/
+.hero-slide
+{
+    padding: 5% 5%;
+}
+.hero-slide div
+{
+    display: inline-block;
+    width: 38%;
+}
+.hero-slide div h2, .hero-slide div h4
+{
+    color: #fff;
+}
+.hero-slide div h2
+{
+    font-size: 40px;
+}
+.hero-slide .more-btn
+{
+    margin-top: 84px;
+}
+
+.order, .count, .gallery, .about, .advantages, .partners, .contact
+{
+    padding-top: 150px;
+}
+.order p, .count p, .gallery p, .advantages p, .partners p, .subscribe p
+{
+    padding: 35px 0;
+}
+.search-form
+{
+    padding-bottom: 60px;
+}
+.search-form .form-input
+{
+    width: 100%;
+    padding: 23px 25px;
+    border: 1px solid #CECECF;
+}
+.search-form .chose
+{
+    margin-right: 30px;
+}
+.sort
+{
+    font-size: 14px;
+    text-align: right;
+    color: #8D8D8D;
+}
+/*Styling Selectbox*/
+.dropdown {
+    width: 125px;
+    display: inline-block;
+    background-color: #fff;
+    transition: all .5s ease;
+    position: relative;
+    font-size: 14px;
+    color: #370059;
+    height: 100%;
+    text-align: left
+}
+.drop-nums
+{
+    width: 60px;
+}
+.drop-count
+{
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    color: #CECECF;
+    border: 1px solid #CECECF;
+}
+.drop-count span
+{
+    color: #CECECF;
+}
+.dropdown .select {
+    cursor: pointer;
+    display: block;
+    padding: 10px
+}
+.drop-count .select
+{
+    padding: 19px 23px;
+}
+.dropdown .select > i {
+    font-size: 13px;
+    color: #370059;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    float: right;
+    line-height: 20px
+}
+.drop-count .select > i
+{
+    color: #CECECF;
+}
+.dropdown.active .select > i {
+    transform: rotate(-180deg)
+}
+.dropdown .dropdown-menu {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    left: -35px;
+    margin-top: 1px;
+    box-shadow: 0 1px 2px rgb(204, 204, 204);
+    border-radius: 0 1px 5px 5px;
+    overflow: hidden;
+    display: none;
+    max-height: 230px;
+    overflow-y: auto;
+    z-index: 9
+}
+.drop-count .dropdown-menu
+{
+    left: 0;
+}
+.dropdown .dropdown-menu li {
+    padding: 10px 50px;
+    color: #23252E;
+    transition: all .2s ease-in-out;
+    cursor: pointer
+}
+.drop-count .dropdown-menu li
+{
+    color: #8D8D8D;
+}
+.dropdown .dropdown-menu {
+    padding: 0;
+    list-style: none
+}
+.dropdown .dropdown-menu li:hover {
+    transition: none;
+    background: url("../img/icons/ellipse.svg")no-repeat 25px 60%;
+    background-color: #f2f2f2
+}
+.drop-count .dropdown-menu li:hover
+{
+    background: none;
+    background-color: #f2f2f2
+}
+.dropdown .dropdown-menu li:active {
+    background-color: #e2e2e2
+}
+.view-as-btns
+{
+    display: none;
+}
+#table-lg
+{
+    width: 100%;
+    background: #fff;
+    color: #000;
+    border-spacing: 1px;
+}
+#table-lg th
+{
+    color: #23252E;
+    background: #F5F5F5;
+}
+td
+{
+    color: #8D8D8D;
+}
+tr:nth-child(odd)
+{
+    background: #FAFAFA;
+}
+#table-lg tr:hover
+{
+    box-shadow: 0px 4px 20px rgba(35, 37, 46, 0.16);
+}
+#table-lg td, #table-lg th
+{
+    padding: 22px 35px;
+}
+.tile-nav
+{
+    width: 100%;
+    padding: 15px 0;
+}
+.tile-ctrl
+{
+    display: inline-block;
+    padding: 24px 19px;
+    background-color: #370059;
+    border: 1px solid #CECECF;
+    cursor: pointer;
+}
+
+.count-form label
+{
+    font-size: 22px;
+    font-weight: 500;
+    padding-bottom: 35px;
+}
+.count-form label[for="product"]
+{
+    margin-top: 60px;
+}
+.count-form .form-input
+{
+    width: 46%;
+    display: inline-block;
+    padding: 19px 25px;
+    margin-top: 30px;
+    font-size: 18px;
+    color: #CECECF;
+    border: 1px solid #CECECF;
+}
+#pays, #cost
+{
+    margin-right: 30px;
+}
+/* Customize the label (the container) */
+.check-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* Hide the browser's default checkbox */
+.check-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    border: 1px solid #CECECF;
+}
+/* On mouse-over, add a grey background color */
+.check-container:hover input ~ .checkmark {
+    /*border: 1px solid #C42034;*/
+}
+/* When the checkbox is checked, add a blue background */
+.check-container input:checked ~ .checkmark {
+    /*background-color: #C42034;*/
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Show the checkmark when checked */
+.check-container input:checked ~ .checkmark:after {
+    display: block;
+}
+/* Style the checkmark/indicator */
+.check-container .checkmark:after {
+    left: 7px;
+    top: 4px;
+    width: 6px;
+    height: 10px;
+    border: solid #370059;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.count-form .rules-check
+{
+    margin-top: 60px;
+    font-size: 22px;
+    font-weight: 500;
+}
+.count-form .rules-check label
+{
+    margin-top: 35px;
+    font-size: 14px;
+    color: #23252E;
+}
+#table-cost
+{
+    width: 100%;
+    background: #fff;
+    color: #23252E;
+    border-spacing: 1px;
+    border: 1px solid #F0EFEF;
+}
+#table-cost th
+{
+    font-size: 22px;
+    font-weight: 500;
+    background: #F5F5F5;
+}
+#table-cost tr
+{
+    background: #fff;
+}
+#table-cost tr:last-child
+{
+    font-size: 22px;
+    font-weight: 500;
+    border-top: 1px solid #F0EFEF;
+}
+#table-cost td, #table-cost th
+{
+    padding: 24px 40px;
+    color: #23252E;
+}
+.save
+{
+    display: inline-block;
+    position: relative;
+    top: 38px;
+    left: 56%;
+    background: url("../img/icons/acrobat.svg")no-repeat 6% 50% !important;
+    background-color: #370059 !important;
+}
+
+.gallery .photo
+{
+    width: 33%;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+.gallery .photo:nth-child(3n)
+{
+    padding-right: 0;
+}
+
+.about .photo
+{
+    display: inline-block;
+    width: 49%;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+.about h2
+{
+    margin-bottom: 52px;
+}
+.about p
+{
+    color: #23252E;
+}
+.h-img
+{
+    display: none;
+}
+
+.advantage
+{
+    width: 16.6%;
+    display: inline-block;
+    position: relative;
+    background: #fff;
+    border: 1px solid #F0EFEF;
+    cursor: pointer;
+}
+.advantage .preview
+{
+    width: 100%;
+    display: inline-block;
+    background: #fff;
+}
+.advantage .preview svg
+{
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.advantage .preview p
+{
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 14px;
+}
+.advantage .description
+{
+    width: 378px;
+    height: 268px;
+    display: none;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    padding: 20px;
+    font-size: 12px;
+    color: #8D8D8D;
+    background: #fff;
+    box-shadow: 1px -2px 2px rgba(35, 37, 46, 0.08),
+    1px 2px 2px rgba(35, 37, 46, 0.08);
+    transition: all .5s ease;
+}
+.d-left
+{
+    right: 100%;
+    box-shadow: -1px -2px 2px rgba(35, 37, 46, 0.08),
+    -1px 2px 2px rgba(35, 37, 46, 0.08);
+}
+.advantage-open
+{
+    box-shadow: 0px 4px 20px rgba(35, 37, 46, 0.08);
+}
+.advantage-open p
+{
+    color: #370059;
+}
+.advantage-open svg path
+{
+    fill: #370059;
+}
+.advantage-open .description
+{
+    display: inline-block;
+}
+
+.testimonial-slide
+{
+    margin-top: 80px;
+    padding: 60px 15px;
+    border: 1px solid #F0EFEF;
+}
+.testimonial-slide h2
+{
+    text-align: center;
+    padding-bottom: 60px;
+}
+.testimonial-slide p, .testimonial-slide span
+{
+    font-size: 12px;
+}
+.testimonial-slide span, .testimonial-slide b
+{
+    display: block;
+}
+.testimonial-slide span
+{
+    color: #8D8D8D;
+}
+.testimonial-slide b
+{
+    margin-bottom: 20px;
+}
+
+.subscribe
+{
+    margin-top: 250px;
+}
+.subscribe-form .form-input
+{
+    width: 85%;
+    padding: 23px 25px;
+    border: 1px solid #CECECF;
+}
+.subscribe-form .rules-check
+{
+    font-size: 14px;
+}
+
+.contact h4
+{
+    margin-top: 60px;
+    margin-bottom: 35px;
+}
+.contact span
+{
+    font-size: 14px;
+}
+.contact iframe
+{
+    padding: 30px 0;
+}
+.contact-form .form-input
+{
+    width: 46%;
+    margin-bottom: 30px;
+    padding: 23px 25px;
+    border: 1px solid #CECECF;
+}
+.contact-form #phone
+{
+    margin-right: 30px;
+}
+.contact-form #name
+{
+    width: 100%;
+}
+.contact-form .comment
+{
+    border: 1px solid #CECECF;
+    padding: 23px 25px;
+}
+.contact-form .rules-check
+{
+    margin: 30px 0;
+    font-size: 14px;
+}
+
+.footer
+{
+    margin-top: 150px;
+}
+.footer span, .footer b
+{
+    display: block;
+}
+.footer span
+{
+    font-size: 14px;
+    color: #8D8D8D;
+}
+.footer b
+{
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+.footer p
+{
+    font-size: 16px;
+    color: #23252E;
+}
+.footer .copyright, .footer .confidencial
+{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: #8D8D8D;
+}
+.footer .confidencial
+{
+    display: block;
+    text-decoration: underline;
+    float: right;
+}
+.footer-nav ul
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 130px;
+}
+.footer-nav li
+{
+    display: block;
+    padding: 10px 0;
+}
+.footer-nav li a
+{
+    text-decoration: none;
+    color: #8D8D8D;
+}
