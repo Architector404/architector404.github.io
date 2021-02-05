@@ -1,0 +1,525 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  width: 100%;
+}
+
+header,
+section,
+nav,
+aside,
+footer {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+}
+
+input[type=file] {
+  display: none;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/*@import "config/config";*/
+
+.contact-buttons {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.contact-buttons__one {
+  font-size: 1em;
+  padding: 8px 15px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--color_basic);
+  cursor: pointer;
+}
+
+.contact-buttons__one:hover {
+  background: var(--color_basic_dark);
+}
+
+.popup-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.3);
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 500ms all;
+  -o-transition: 500ms all;
+  transition: 500ms all;
+}
+
+.popup-bg .popup-window {
+  position: absolute;
+  z-index: 30;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  min-height: 300px;
+  border-radius: var(--border-radius_basic);
+  background: var(--color_background);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  /*border: 1px solid #34ce57;*/
+}
+
+.popup-bg .popup-window .popup-header {
+  position: relative;
+  margin: 0;
+  /*padding: 10px 5px;*/
+  font-size: 16px;
+  color: #fff;
+}
+
+.popup-bg .popup-window .popup-header .popup-close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 25px;
+  color: #555;
+  background: none;
+  border: none;
+  -webkit-transition: 0.3s linear color;
+  -o-transition: 0.3s linear color;
+  transition: 0.3s linear color;
+}
+
+.popup-bg .popup-window .popup-header .popup-close-btn:hover,
+.popup-bg .popup-window .popup-header .popup-close-btn:focus {
+  color: var(--color_basic);
+  outline: none;
+  cursor: pointer;
+}
+
+.popup-show {
+  opacity: 1;
+  visibility: visible;
+  z-index: 20;
+}
+
+.callback-form {
+  padding: 25px 37px;
+  font-family: "Regular";
+  font-size: .9em;
+}
+
+.callback-form__logo {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+}
+
+.callback-form__title {
+  display: block;
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 1.5em;
+  font-weight: 400;
+  font-family: "Medium";
+}
+
+.callback-form__field {
+  padding: 8px 16px;
+  margin-bottom: 25px;
+  color: var(--color_text_input);
+  border-radius: 5px;
+  background: var(--color_input);
+}
+
+.callback-form__input {
+  display: inline-block;
+  width: 82%;
+  padding: 5px;
+  font-weight: 500;
+  font-family: "Regular";
+  color: var(--color_text_input);
+  background: var(--color_input);
+}
+
+.callback-form__input::-webkit-input-placeholder {
+  color: var(--color_text_input);
+}
+
+.callback-form__input::-moz-placeholder {
+  color: var(--color_text_input);
+}
+
+.callback-form__input:-ms-input-placeholder {
+  color: var(--color_text_input);
+}
+
+.callback-form__input::-ms-input-placeholder {
+  color: var(--color_text_input);
+}
+
+.callback-form__input::placeholder {
+  color: var(--color_text_input);
+}
+
+.callback-form__input:focus ~ i {
+  color: var(--color_basic);
+}
+
+.callback-form__input:active ~ i {
+  color: var(--color_basic);
+}
+
+.callback-form input:focus {
+  outline: none !important;
+}
+
+.callback-form #email-field {
+  display: none;
+}
+
+.callback-form__area {
+  width: 100%;
+  height: 150px;
+  outline: none;
+}
+
+.callback-form__count {
+  position: relative;
+  bottom: 0;
+  left: 80%;
+  font-family: "Regular";
+  font-size: .9em;
+}
+
+.callback-form__radio {
+  margin-bottom: 25px;
+}
+
+.callback-form .radio-container {
+  display: inline-block;
+  position: relative;
+  margin-right: 15px;
+  padding-left: 25px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.callback-form .radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.callback-form .radiomark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  -webkit-transition: 0.3s linear border-color;
+  -o-transition: 0.3s linear border-color;
+  transition: 0.3s linear border-color;
+}
+
+.callback-form .radio-container:hover input ~ .radiomark {
+  border: 1px solid var(--color_basic);
+}
+
+.callback-form .radio-container input:checked ~ .radiomark {
+  background-color: var(--color_basic);
+}
+
+.callback-form .radiomark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.callback-form .radio-container input:checked ~ .radiomark:after {
+  display: block;
+}
+
+.callback-form .radio-container .radiomark:after {
+  top: 1px;
+  left: 1px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #FFF;
+  background: var(--color_basic);
+}
+
+.callback-form__time {
+  display: none;
+  float: right;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 4px 8px;
+  margin-right: 25px;
+  margin-bottom: 15px;
+  color: var(--color_basic);
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.callback-form__time:hover {
+  border: 1px solid var(--color_basic);
+}
+
+.callback-form .callback-form__attach {
+  margin-bottom: 25px;
+}
+
+.callback-form .attach__btn {
+  width: 100%;
+  font-size: 1em;
+  text-align: left;
+  padding: 8px 15px;
+  font-family: "Regular";
+  color: var(--color_text_input);
+  background: #FCFCFC;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s linear border-color;
+  -o-transition: 0.3s linear border-color;
+  transition: 0.3s linear border-color;
+}
+
+.callback-form .attach__btn:hover {
+  border: 1px dashed var(--color_basic);
+}
+
+.callback-form .attach__btn:hover > i {
+  color: var(--color_basic);
+}
+
+.callback-form .attach__btn:focus {
+  border: 1px dashed var(--color_basic);
+}
+
+.callback-form .attach__btn:active {
+  border: 1px dashed var(--color_basic);
+}
+
+.callback-form .attached {
+  color: var(--color_basic);
+  border: 1px dashed var(--color_basic);
+}
+
+.callback-form .g-recaptcha {
+  margin-bottom: 25px;
+}
+
+.callback-form .personal {
+  margin-top: 25px;
+}
+
+.callback-form label[for=personal] a {
+  color: var(--color_basic);
+  -webkit-transition: 0.3s linear color;
+  -o-transition: 0.3s linear color;
+  transition: 0.3s linear color;
+}
+
+.callback-form label[for=personal] a:hover,
+.callback-form label[for=personal] a:focus {
+  outline: none;
+  color: var(--color_basic_dark);
+}
+
+.callback-form .check-container {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  clear: both;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.callback-form .check-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.callback-form .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  border: 1px solid #ccc;
+  -webkit-transition: 0.3s linear border-color;
+  -o-transition: 0.3s linear border-color;
+  transition: 0.3s linear border-color;
+}
+
+.callback-form .check-container:hover input ~ .checkmark {
+  border: 1px solid var(--color_basic_dark);
+}
+
+.callback-form .check-container input:checked ~ .checkmark {
+  background-color: #FFF;
+}
+
+.callback-form .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.callback-form .check-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.callback-form .check-container .checkmark:after {
+  left: 4px;
+  top: 0;
+  width: 6px;
+  height: 10px;
+  border: solid var(--color_basic);
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.callback-form .callback-form__send {
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  margin-top: 15px;
+  padding: 8px 15px;
+  font-weight: 400;
+  font-family: "Medium";
+  outline: none;
+  border-radius: var(--border-radius_basic);
+  color: var(--color_text_btn);
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--color_basic)), to(var(--color_basic_dark)));
+  background: -o-linear-gradient(top, var(--color_basic) 0%, var(--color_basic_dark) 100%);
+  background: linear-gradient(180deg, var(--color_basic) 0%, var(--color_basic_dark) 100%);
+  -webkit-box-shadow: var(--shadow_basic);
+          box-shadow: var(--shadow_basic);
+  -webkit-transition: 0.3s linear background;
+  -o-transition: 0.3s linear background;
+  transition: 0.3s linear background;
+  cursor: pointer;
+}
+
+.callback-form .callback-form__send:hover,
+.callback-form .callback-form__send:focus {
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--color_basic_dark)), to(var(--color_basic_dark)));
+  background: -o-linear-gradient(top, var(--color_basic_dark) 0%, var(--color_basic_dark) 100%);
+  background: linear-gradient(180deg, var(--color_basic_dark) 0%, var(--color_basic_dark) 100%);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.callback-form .disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.correct {
+  color: var(--color_basic);
+  border: none;
+}
+
+.correct .callback-form__input {
+  color: var(--color_basic);
+}
+
+.incorrect {
+  color: var(--color_text_input);
+  border: 1px solid red;
+}
+
+.incorrect .callback-form__input {
+  color: var(--color_text_input);
+}
+
+.warning {
+  display: none;
+  color: #FF0000;
+}
+
+.preloader {
+  padding: 25px;
+}
+
+.form-result {
+  padding: 25px;
+  font-family: "Regular";
+}
+
+.form-result__icon {
+  display: block;
+  width: 125px;
+  margin: 0 auto;
+}
+
+.form-result__title {
+  display: inline-block;
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 25px;
+  font-family: "Medium";
+}

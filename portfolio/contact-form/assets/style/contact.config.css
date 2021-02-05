@@ -1,0 +1,21 @@
+:root {
+  --color_background: #fff;
+  --color_text: #444;
+  --color_text_btn: #fff;
+  --color_text_input: #b9b9b9;
+  --color_basic: #12CD1E;
+  --color_basic_dark: #0fb019;
+  --color_input: #fcfcfc;
+  --shadow_basic: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --border-radius_basic: 5px;
+}
+
+@font-face {
+  font-family: "Regular";
+  src: url("../fonts/Rubik/Rubik-Regular.woff"), url("../fonts/Rubik/Rubik-Regular.woff2");
+}
+
+@font-face {
+  font-family: "Medium";
+  src: url("../fonts/Rubik/Rubik-Medium.woff"), url("../fonts/Rubik/Rubik-Medium.woff2");
+}
